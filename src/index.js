@@ -1,7 +1,8 @@
-import styles from './style.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App/App';
 
-let container = document.querySelector(".container");
-let text = document.createElement("h1");
-text.innerText = "Hello World!";
-container.appendChild(text);
-
+ReactDOM.render(
+  <App/>,
+  document.getElementById('root')
+);
