@@ -1,0 +1,15 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.container {
+  background-color: #272838;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  color: white;
+}
+
+h1 {
+  font-size: 4em;
+}
