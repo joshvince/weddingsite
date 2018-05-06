@@ -1,0 +1,32 @@
+.darkSection {
+  background-color: #3A3C54;
+}
+
+.lightSection {
+  background-color: white;
+  padding: 0 10px;
+}
+
+.lightSection * {
+  color: #92B7E8;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 6rem;
+    margin-top: 0.5em;
+  }
+
+  h2 {
+    font-size: 4em;
+    margin-top: 0.5em;
+  }
+}
