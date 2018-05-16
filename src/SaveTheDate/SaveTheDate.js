@@ -5,16 +5,19 @@ import DarkSection from '../App/Section/DarkSection';
 
 import './style.css';
 
+/*
+Format the URL like `/?names=Josh/Bethan`
+*/
 const getNames = () => {
-  let namesArray = window.location.search.split("=").pop().split("/");
+  let namesArray = window.location.search.replace("%20", " ").split("=").pop().split("/");
   if (namesArray.length === 1) {
-    return namesArray[0]
+    return `${namesArray[0]}...`.toUpperCase()
   }
   else {
     let lastName = namesArray.pop();
     let firstNames = namesArray.join(", ");
 
-    return `${firstNames} & ${lastName}`.toUpperCase()
+    return `${firstNames} & ${lastName}...`.toUpperCase()
   }
 }
 
@@ -33,7 +36,7 @@ const SaveTheDate = () => {
           <div className="text-row">
             <p className="subheader">{names}</p>
             <p>
-              JOSH & BETHAN ARE HEADING FOR A WEDDING, AND SO ARE YOU!
+              JOSH & BETHAN ARE HEADING FOR A WEDDING, AND SO ARE YOU
             </p>
           </div>
         </div>
