@@ -10,14 +10,17 @@ Format the URL like `/?names=Josh/Bethan`
 */
 const getNames = () => {
   let namesArray = window.location.search.replace("%20", " ").split("=").pop().split("/");
-  if (namesArray.length === 1) {
-    return `${namesArray[0]}...`.toUpperCase()
+  if (!namesArray.length) {
+    return ""
+  }
+  else if (namesArray.length === 1) {
+    return `${namesArray[0]}`.toUpperCase()
   }
   else {
     let lastName = namesArray.pop();
     let firstNames = namesArray.join(", ");
 
-    return `${firstNames} & ${lastName}...`.toUpperCase()
+    return `${firstNames} & ${lastName}`.toUpperCase()
   }
 }
 
@@ -25,18 +28,24 @@ const SaveTheDate = () => {
   const image = <img src={Flowers} id="flowers"/>
   const names = getNames();
   return (
-    <div>
+    <div className="pageContainer">
       <LightSection
         image={image}
-        header="1ST JUNE 2019"
-        subheader="SAVE THE DATE"
+        header="22ND JUNE 2019"
+        subheader="WEST SUSSEX"
       />
       <div className="darkSection padded">
         <div className="flex-center-col">
           <div className="text-row">
             <p className="subheader">{names}</p>
             <p>
-              JOSH & BETHAN ARE HEADING FOR A WEDDING, AND SO ARE YOU
+              JOSH & BETHAN ARE GETTING MARRIED
+            </p>
+            <p>
+              WE'D LOVE FOR YOU TO JOIN US
+            </p>
+            <p>
+              INVITATIONS COMING SOON
             </p>
           </div>
         </div>

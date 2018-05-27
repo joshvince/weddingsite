@@ -1,3 +1,8 @@
+.pageContainer {
+  min-height: 100vh;
+  background-color: #3A3C54
+}
+
 #flowers {
   height: 10em;
 }
@@ -19,7 +24,7 @@ p {
 }
 
 .padded {
-  padding: 2em 10px;
+  padding: 2rem 10px;
 }
 
 .flex-center-col {
