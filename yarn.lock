@@ -3947,6 +3947,10 @@ multimatch@^2.0.0:
     arrify "^1.0.0"
     minimatch "^3.0.0"
 
+mustard-ui@^0.0.7:
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/mustard-ui/-/mustard-ui-0.0.7.tgz#0fc968437f314a2df134ccf6f064b5bd14763cec"
+
 mute-stream@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"

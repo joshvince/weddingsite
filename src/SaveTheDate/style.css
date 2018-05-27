@@ -1,0 +1,42 @@
+.pageContainer {
+  min-height: 100vh;
+  background-color: #3A3C54
+}
+
+#flowers {
+  height: 10em;
+}
+
+.subheader {
+  font-size: 2em;
+  color: #92B7E8;
+  font-weight: 900;
+}
+
+p {
+  font-size: 1.7em;
+  color: white;
+  font-weight: 900;
+}
+
+.darkSection {
+  background-color: #3A3C54;
+}
+
+.padded {
+  padding: 2rem 10px;
+}
+
+.flex-center-col {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-row {
+  max-width: 500px;
+}
+
+

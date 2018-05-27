@@ -1,10 +1,13 @@
 import React from 'react';
-import styles from './style.css';
+import 'mustard-ui';
+import './style.css';
+
+import SaveTheDate from '../SaveTheDate/SaveTheDate';
 
 const App = () => {
   return (
-    <div className="container">
-      <h1>Hello World</h1>
+    <div className="align-center">
+      <SaveTheDate />
     </div>
   );
 };
