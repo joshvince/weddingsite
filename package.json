@@ -1,11 +1,14 @@
 {
-  "name": "webpack-babel-boilerplate",
+  "name": "bosh-wedding-site",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open",
+    "build": "webpack -p",
+    "syncBucketOne": "aws s3 sync dist/ s3://boshwedding.com --profile default",
+    "deploy": "npm run build && npm run syncBucketOne"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

@@ -3,10 +3,6 @@
   background-color: #3A3C54
 }
 
-#flowers {
-  height: 10em;
-}
-
 .subheader {
   font-size: 2em;
   color: #92B7E8;
@@ -37,6 +33,16 @@ p {
 
 .text-row {
   max-width: 500px;
+}
+
+@media (min-width: 768px) {
+  .text-row {
+    max-width: 600px;
+  }
+
+  #flowers {
+    height: 10em;
+  }
 }
 
 

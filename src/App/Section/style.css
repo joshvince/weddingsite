@@ -4,24 +4,45 @@
 
 .lightSection {
   background-color: white;
-  padding: 1.3rem 10px;
+  padding: 0 10px 1.3em 10px;
 }
 
 .lightSection * {
   color: #92B7E8;
 }
 
+h1, h2{
+  margin-bottom: 0;
+  line-height: 1em;
+}
+
 h1 {
-  font-size: 4em;
+  font-size: 2.8em;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
+}
+
+@media (min-width: 330px) {
+  h1 {
+    font-size: 4em;
+    margin-bottom: 0.4em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.4em;
+  }
+
+  p {
+    line-height: 1.3em;
+  }
 }
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 6rem;
+    font-size: 6em;
     margin-top: 0.5em;
   }
 
