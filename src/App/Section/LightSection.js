@@ -3,7 +3,7 @@ import styles from './style.css';
 
 const LightSection = ({firstRow, secondRow, thirdRow, image}) => {
   return (
-    <div className="lightSection">
+    <div className="lightSection fullPageColumn">
       <div className="row">
         <div className="col">
           {image}
