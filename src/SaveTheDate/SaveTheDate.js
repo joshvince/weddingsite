@@ -31,8 +31,9 @@ const SaveTheDate = () => {
     <div className="pageContainer">
       <LightSection
         image={image}
-        header="22ND JUNE 2019"
-        subheader="WEST SUSSEX"
+        firstRow="SAVE THE DATE"
+        secondRow="22ND JUNE 2019"
+        thirdRow="WEST SUSSEX"
       />
       <div className="darkSection padded">
         <div className="flex-center-col">
