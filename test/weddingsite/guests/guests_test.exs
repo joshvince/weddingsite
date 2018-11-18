@@ -2,6 +2,7 @@ defmodule Weddingsite.GuestsTest do
   use Weddingsite.DataCase
 
   alias Weddingsite.Guests
+  alias Weddingsite.Repo
 
   describe "invites" do
     alias Weddingsite.Guests.Invite
@@ -10,13 +11,24 @@ defmodule Weddingsite.GuestsTest do
     @update_attrs %{code: "some updated code", day_guests: false, email: "some updated email", family_name: "some updated family_name"}
     @invalid_attrs %{code: nil, day_guests: nil, email: nil, family_name: nil}
 
+    @person_attrs %{day_guest: true, email: "some email", first_name: "some first_name", last_name: "some last_name"}
+
     def invite_fixture(attrs \\ %{}) do
       {:ok, invite} =
         attrs
         |> Enum.into(@valid_attrs)
         |> Guests.create_invite()
 
-      invite
+      invite |> Repo.preload(:people)
+    end
+
+    def create_person(attrs \\ %{}) do
+      {:ok, person} =
+        attrs
+        |> Enum.into(@person_attrs)
+        |> Guests.create_person()
+
+      person
     end
 
     test "list_invites/0 returns all invites" do
@@ -66,13 +78,20 @@ defmodule Weddingsite.GuestsTest do
       invite = invite_fixture()
       assert %Ecto.Changeset{} = Guests.change_invite(invite)
     end
+
+    test "add_guests/2 adds some people to the invite" do
+      invite = invite_fixture()
+      [%{id: id_1}, %{id: id_2}] = [create_person(), create_person()]
+      %Invite{people: guest_list} = Guests.add_guests(invite, [id_1, id_2])
+      assert Enum.count(guest_list) == 2
+    end
   end
 
   describe "people" do
     alias Weddingsite.Guests.Person
 
-    @valid_attrs %{attending: true, day_guest: true, dessert_choice: "some dessert_choice", dietary_requirements: "some dietary_requirements", email: "some email", first_name: "some first_name", last_name: "some last_name", rsvp_at: ~D[2010-04-17]}
-    @update_attrs %{attending: false, day_guest: false, dessert_choice: "some updated dessert_choice", dietary_requirements: "some updated dietary_requirements", email: "some updated email", first_name: "some updated first_name", last_name: "some updated last_name", rsvp_at: ~D[2011-05-18]}
+    @valid_attrs %{attending: true, day_guest: true, dessert_choice: :raspberry_cheesecake, dietary_requirements: "some dietary_requirements", email: "some email", first_name: "some first_name", last_name: "some last_name"}
+    @update_attrs %{attending: false, day_guest: false, dessert_choice: :chocolate_tart, dietary_requirements: "some updated dietary_requirements", email: "some updated email", first_name: "some updated first_name", last_name: "some updated last_name"}
     @invalid_attrs %{attending: nil, day_guest: nil, dessert_choice: nil, dietary_requirements: nil, email: nil, first_name: nil, last_name: nil, rsvp_at: nil}
 
     def person_fixture(attrs \\ %{}) do
@@ -81,7 +100,7 @@ defmodule Weddingsite.GuestsTest do
         |> Enum.into(@valid_attrs)
         |> Guests.create_person()
 
-      person
+      person |> Repo.preload(:invite)
     end
 
     test "list_people/0 returns all people" do
@@ -98,12 +117,11 @@ defmodule Weddingsite.GuestsTest do
       assert {:ok, %Person{} = person} = Guests.create_person(@valid_attrs)
       assert person.attending == true
       assert person.day_guest == true
-      assert person.dessert_choice == "some dessert_choice"
+      assert person.dessert_choice == :raspberry_cheesecake
       assert person.dietary_requirements == "some dietary_requirements"
       assert person.email == "some email"
       assert person.first_name == "some first_name"
       assert person.last_name == "some last_name"
-      assert person.rsvp_at == ~D[2010-04-17]
     end
 
     test "create_person/1 with invalid data returns error changeset" do
@@ -115,12 +133,11 @@ defmodule Weddingsite.GuestsTest do
       assert {:ok, %Person{} = person} = Guests.update_person(person, @update_attrs)
       assert person.attending == false
       assert person.day_guest == false
-      assert person.dessert_choice == "some updated dessert_choice"
+      assert person.dessert_choice == :chocolate_tart
       assert person.dietary_requirements == "some updated dietary_requirements"
       assert person.email == "some updated email"
       assert person.first_name == "some updated first_name"
       assert person.last_name == "some updated last_name"
-      assert person.rsvp_at == ~D[2011-05-18]
     end
 
     test "update_person/2 with invalid data returns error changeset" do

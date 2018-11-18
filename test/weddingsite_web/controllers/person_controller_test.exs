@@ -3,9 +3,9 @@ defmodule WeddingsiteWeb.PersonControllerTest do
 
   alias Weddingsite.Guests
 
-  @create_attrs %{attending: true, day_guest: true, dessert_choice: "some dessert_choice", dietary_requirements: "some dietary_requirements", email: "some email", first_name: "some first_name", last_name: "some last_name", rsvp_at: ~D[2010-04-17]}
-  @update_attrs %{attending: false, day_guest: false, dessert_choice: "some updated dessert_choice", dietary_requirements: "some updated dietary_requirements", email: "some updated email", first_name: "some updated first_name", last_name: "some updated last_name", rsvp_at: ~D[2011-05-18]}
-  @invalid_attrs %{attending: nil, day_guest: nil, dessert_choice: nil, dietary_requirements: nil, email: nil, first_name: nil, last_name: nil, rsvp_at: nil}
+  @create_attrs %{attending: true, day_guest: true, dessert_choice: :raspberry_cheesecake, dietary_requirements: "some dietary_requirements", email: "some email", first_name: "some first_name", last_name: "some last_name", rsvp_at: ~D[2010-04-17]}
+  @update_attrs %{attending: false, day_guest: false, dessert_choice: :chocolate_tart, dietary_requirements: "some updated dietary_requirements", email: "some updated email", first_name: "some updated first_name", last_name: "some updated last_name", rsvp_at: ~D[2011-05-18]}
+  @invalid_attrs %{attending: nil, day_guest: nil, dessert_choice: "DROPDB", dietary_requirements: nil, email: nil, first_name: nil, last_name: nil, rsvp_at: nil}
 
   def fixture(:person) do
     {:ok, person} = Guests.create_person(@create_attrs)
@@ -60,7 +60,7 @@ defmodule WeddingsiteWeb.PersonControllerTest do
       assert redirected_to(conn) == Routes.person_path(conn, :show, person)
 
       conn = get(conn, Routes.person_path(conn, :show, person))
-      assert html_response(conn, 200) =~ "some updated dessert_choice"
+      assert html_response(conn, 200) =~ "some updated dietary_requirements"
     end
 
     test "renders errors when data is invalid", %{conn: conn, person: person} do

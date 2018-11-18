@@ -22,6 +22,15 @@
     <%= @invite.day_guests %>
   </li>
 
+  <div>Guests in this invite</div>
+
+  <%= for person <- @invite.people do %>
+    <li>
+      <%="#{person.first_name} #{person.last_name}"%>
+      <span><%= link "View", to: Routes.person_path(@conn, :show, person) %></span>
+    </li>
+  <% end %>
+
 </ul>
 
 <span><%= link "Edit", to: Routes.invite_path(@conn, :edit, @invite) %></span>

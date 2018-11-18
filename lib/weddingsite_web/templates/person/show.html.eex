@@ -23,6 +23,17 @@
   </li>
 
   <li>
+    <strong>Invite name:</strong>
+    <%= if @person.invite do %>
+      <%= @person.invite.family_name%>
+      <span><%= link "View Invite", to: Routes.invite_path(@conn, :show, @person.invite)%></span>
+    <% else %>
+    <span>No invite yet</span>
+    <% end %>
+
+  </li>
+
+  <li>
     <strong>Rsvp at:</strong>
     <%= @person.rsvp_at %>
   </li>

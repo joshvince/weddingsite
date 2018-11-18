@@ -20,4 +20,11 @@ defmodule Weddingsite.Guests.Invite do
     |> cast(attrs, [:code, :family_name, :email, :day_guests])
     |> validate_required([:code, :family_name, :email, :day_guests])
   end
+
+  @doc false
+  def guest_list_changeset(invite, guest_list) do
+    invite
+    |> cast(%{}, [])
+    |> put_assoc(:people, guest_list)
+  end
 end

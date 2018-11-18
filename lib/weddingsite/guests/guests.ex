@@ -7,6 +7,7 @@ defmodule Weddingsite.Guests do
   alias Weddingsite.Repo
 
   alias Weddingsite.Guests.Invite
+  alias Weddingsite.Guests.Person
 
   @doc """
   Returns the list of invites.
@@ -80,6 +81,21 @@ defmodule Weddingsite.Guests do
   end
 
   @doc """
+  Adds people to an invite.
+  This function should receive an invite and a list of IDs representing guest IDs.
+
+  """
+
+  def add_guests(%Invite{} = invite, guest_ids) do
+    guest_list = Enum.map(guest_ids, &get_person!(&1))
+
+    invite
+    |> Repo.preload(:people)
+    |> Invite.guest_list_changeset(guest_list)
+    |> Repo.update!
+  end
+
+  @doc """
   Deletes a Invite.
 
   ## Examples
@@ -107,8 +123,6 @@ defmodule Weddingsite.Guests do
   def change_invite(%Invite{} = invite) do
     Invite.changeset(invite, %{})
   end
-
-  alias Weddingsite.Guests.Person
 
   @doc """
   Returns the list of people.

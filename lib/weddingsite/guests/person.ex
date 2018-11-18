@@ -12,7 +12,7 @@ defmodule Weddingsite.Guests.Person do
     field :email, :string
     field :first_name, :string
     field :last_name, :string
-    field :rsvp_at, :date
+    field :rsvp_at, :naive_datetime
     belongs_to :invite, Guests.Invite
 
     timestamps()
