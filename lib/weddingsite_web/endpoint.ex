@@ -40,7 +40,7 @@ defmodule WeddingsiteWeb.Endpoint do
   plug Plug.Session,
     store: :cookie,
     key: "_weddingsite_key",
-    signing_salt: "Qsnbmc5M"
+    signing_salt: "+FvEk6Ts"
 
   plug WeddingsiteWeb.Router
 end

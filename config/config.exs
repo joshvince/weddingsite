@@ -13,7 +13,7 @@ config :weddingsite,
 # Configures the endpoint
 config :weddingsite, WeddingsiteWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "TYKZFQYT76BI0Hq6b11IUVluMgRGArxFW+CgN0cE/SGczmHs87yvx4ZtO+v0JmVh",
+  secret_key_base: "V47dMPFkbQySh/5bBv4pWyS3x6BTaVHYHyjCXBob/0WbexSQtskXgVh9HO4D0fo5",
   render_errors: [view: WeddingsiteWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: Weddingsite.PubSub, adapter: Phoenix.PubSub.PG2]
 
