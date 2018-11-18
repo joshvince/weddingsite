@@ -1,0 +1,28 @@
+<h1>Show Invite</h1>
+
+<ul>
+
+  <li>
+    <strong>Code:</strong>
+    <%= @invite.code %>
+  </li>
+
+  <li>
+    <strong>Family name:</strong>
+    <%= @invite.family_name %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @invite.email %>
+  </li>
+
+  <li>
+    <strong>Day guests:</strong>
+    <%= @invite.day_guests %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.invite_path(@conn, :edit, @invite) %></span>
+<span><%= link "Back", to: Routes.invite_path(@conn, :index) %></span>

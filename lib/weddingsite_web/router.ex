@@ -17,6 +17,8 @@ defmodule WeddingsiteWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    resources "/invites", InviteController
+    resources "/people", PersonController
   end
 
   # Other scopes may use custom stacks.
