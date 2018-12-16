@@ -1,0 +1,37 @@
+<h1>Show Invite</h1>
+
+<ul>
+
+  <li>
+    <strong>Code:</strong>
+    <%= @invite.code %>
+  </li>
+
+  <li>
+    <strong>Family name:</strong>
+    <%= @invite.family_name %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @invite.email %>
+  </li>
+
+  <li>
+    <strong>Day guests:</strong>
+    <%= @invite.day_guests %>
+  </li>
+
+  <div>Guests in this invite</div>
+
+  <%= for person <- @invite.people do %>
+    <li>
+      <%="#{person.first_name} #{person.last_name}"%>
+      <span><%= link "View", to: Routes.person_path(@conn, :show, person) %></span>
+    </li>
+  <% end %>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.invite_path(@conn, :edit, @invite) %></span>
+<span><%= link "Back", to: Routes.invite_path(@conn, :index) %></span>

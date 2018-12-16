@@ -1,0 +1,17 @@
+/* This file is for your main application css. */
+
+@import "./phoenix.css";
+
+#main-nav {
+  display: flex;
+  align-items: center;
+}
+
+#main-nav > div, #main-nav > a {
+  margin: 1rem;
+  vertical-align: middle;
+}
+
+#main-nav > .logo {
+  font-size: 4rem;
+}

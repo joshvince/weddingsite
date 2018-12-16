@@ -1,0 +1,40 @@
+<h1>Listing People</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Email</th>
+      <th>Day guest</th>
+      <th>Rsvp at</th>
+      <th>Attending</th>
+      <th>Dessert choice</th>
+      <th>Dietary requirements</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for person <- @people do %>
+    <tr>
+      <td><%= person.first_name %></td>
+      <td><%= person.last_name %></td>
+      <td><%= person.email %></td>
+      <td><%= person.day_guest %></td>
+      <td><%= person.rsvp_at %></td>
+      <td><%= person.attending %></td>
+      <td><%= person.dessert_choice %></td>
+      <td><%= person.dietary_requirements %></td>
+
+      <td>
+        <%= link "Show", to: Routes.person_path(@conn, :show, person) %>
+        <%= link "Edit", to: Routes.person_path(@conn, :edit, person) %>
+        <%= link "Delete", to: Routes.person_path(@conn, :delete, person), method: :delete, data: [confirm: "Are you sure?"] %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New Person", to: Routes.person_path(@conn, :new) %></span>

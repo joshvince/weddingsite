@@ -1,0 +1,59 @@
+<h1>Show Person</h1>
+
+<ul>
+
+  <li>
+    <strong>First name:</strong>
+    <%= @person.first_name %>
+  </li>
+
+  <li>
+    <strong>Last name:</strong>
+    <%= @person.last_name %>
+  </li>
+
+  <li>
+    <strong>Email:</strong>
+    <%= @person.email %>
+  </li>
+
+  <li>
+    <strong>Day guest:</strong>
+    <%= @person.day_guest %>
+  </li>
+
+  <li>
+    <strong>Invite name:</strong>
+    <%= if @person.invite do %>
+      <%= @person.invite.family_name%>
+      <span><%= link "View Invite", to: Routes.invite_path(@conn, :show, @person.invite)%></span>
+    <% else %>
+    <span>No invite yet</span>
+    <% end %>
+
+  </li>
+
+  <li>
+    <strong>Rsvp at:</strong>
+    <%= @person.rsvp_at %>
+  </li>
+
+  <li>
+    <strong>Attending:</strong>
+    <%= @person.attending %>
+  </li>
+
+  <li>
+    <strong>Dessert choice:</strong>
+    <%= @person.dessert_choice %>
+  </li>
+
+  <li>
+    <strong>Dietary requirements:</strong>
+    <%= @person.dietary_requirements %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.person_path(@conn, :edit, @person) %></span>
+<span><%= link "Back", to: Routes.person_path(@conn, :index) %></span>
