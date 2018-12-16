@@ -10,7 +10,8 @@ defmodule WeddingsiteWeb.InviteController do
   end
 
   def new(conn, _params) do
-    changeset = Guests.change_invite(%Invite{})
+    code = Weddingsite.ThreeWords.generate()
+    changeset = Guests.change_invite(%Invite{code: code})
     render(conn, "new.html", changeset: changeset)
   end
 

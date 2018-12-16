@@ -22,7 +22,9 @@ defmodule WeddingsiteWeb.Router do
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", WeddingsiteWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", WeddingsiteWeb do
+    pipe_through :api
+
+    get "/codes", CodeController, :get_new_code
+  end
 end
