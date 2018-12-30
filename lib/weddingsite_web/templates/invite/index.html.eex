@@ -22,6 +22,7 @@
       <td>
         <%= link "Show", to: Routes.invite_path(@conn, :show, invite) %>
         <%= link "Edit", to: Routes.invite_path(@conn, :edit, invite) %>
+        <%= link "Add Guests", to: Routes.invite_path(@conn, :guests, invite)%>
         <%= link "Delete", to: Routes.invite_path(@conn, :delete, invite), method: :delete, data: [confirm: "Are you sure?"] %>
       </td>
     </tr>

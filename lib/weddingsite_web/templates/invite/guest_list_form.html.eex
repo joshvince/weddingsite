@@ -1,0 +1,39 @@
+<%= form_for @conn, @action, fn f -> %>
+  <h3>Guests</h3>
+  <%= for p <- @invite.people do %>
+    <div>
+      <input
+        type="checkbox"
+        class="guest-checkbox"
+        id=<%="guest-#{p.id}"%>
+        name="guest_list[]"
+        value=<%="#{p.id}"%>
+        checked
+        disabled
+      >
+      <label class="guest-label" for=<%= "guest-#{p.id}" %>>
+        <i><%= "#{p.id} - #{p.first_name} #{p.last_name}" %></i>
+      </label>
+    </div>
+  <%= end %>
+
+  <%= for p <- @uninvited_people do %>
+    <%= ids = Enum.map(@invite.people, &(&1.id))%>
+    <div>
+      <input
+        type="checkbox"
+        class="guest-checkbox"
+        id=<%="guest-#{p.id}"%>
+        name="guest_list[]"
+        value=<%="#{p.id}"%>
+      >
+      <label class="guest-label" for=<%= "guest-#{p.id}" %>>
+        <%= "#{p.id} - #{p.first_name} #{p.last_name}" %>
+      </label>
+    </div>
+
+  <%= end %>
+  <div>
+    <%= submit "Save"%>
+  </div>
+<%= end %>

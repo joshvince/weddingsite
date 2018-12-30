@@ -18,6 +18,8 @@ defmodule WeddingsiteWeb.Router do
 
     get "/", PageController, :index
     resources "/invites", InviteController
+    get "/invites/:id/guests", InviteController, :guests
+    post "/invites/:id/update_guests", InviteController, :update_guests
     resources "/people", PersonController
   end
 
