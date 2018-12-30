@@ -18,11 +18,15 @@ defmodule WeddingsiteWeb.Router do
 
     get "/", PageController, :index
     resources "/invites", InviteController
+    get "/invites/:id/guests", InviteController, :guests
+    post "/invites/:id/update_guests", InviteController, :update_guests
     resources "/people", PersonController
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", WeddingsiteWeb do
-  #   pipe_through :api
-  # end
+  scope "/api", WeddingsiteWeb do
+    pipe_through :api
+
+    get "/codes", CodeController, :get_new_code
+  end
 end

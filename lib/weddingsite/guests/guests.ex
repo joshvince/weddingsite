@@ -140,6 +140,20 @@ defmodule Weddingsite.Guests do
   end
 
   @doc """
+  Returns a list of people not currently added to an invite.
+
+  ## Examples
+
+      iex> list_people()
+      [%Person{}, ...]
+
+  """
+  def list_uninvited_people do
+    list_people()
+    |> Enum.filter(fn p -> p.invite_id == nil end)
+  end
+
+  @doc """
   Gets a single person.
 
   Raises `Ecto.NoResultsError` if the Person does not exist.

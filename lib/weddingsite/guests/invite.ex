@@ -19,6 +19,7 @@ defmodule Weddingsite.Guests.Invite do
     invite
     |> cast(attrs, [:code, :family_name, :email, :day_guests])
     |> validate_required([:code, :family_name, :email, :day_guests])
+    |> unique_constraint(:code)
   end
 
   @doc false
