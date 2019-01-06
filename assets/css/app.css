@@ -2,6 +2,23 @@
 
 @import "./phoenix.css";
 
+
+@import url('https://rsms.me/inter/inter-ui.css');
+
+* {
+  font-family: 'Inter UI', sans-serif;
+  font-weight: 400;
+}
+
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter UI var alt', sans-serif; }
+}
+
+h1,h2,h3,h4,h5 {
+  font-weight: 800;
+}
+
+
 #main-nav {
   display: flex;
   align-items: center;

@@ -17,6 +17,12 @@ defmodule WeddingsiteWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+  end
+
+  scope "/admin", WeddingsiteWeb do
+    pipe_through :browser
+
+
     resources "/invites", InviteController
     get "/invites/:id/guests", InviteController, :guests
     post "/invites/:id/update_guests", InviteController, :update_guests
@@ -28,5 +34,6 @@ defmodule WeddingsiteWeb.Router do
     pipe_through :api
 
     get "/codes", CodeController, :get_new_code
+    get "/rsvp/:code", RSVPController, :show_json
   end
 end

@@ -236,4 +236,16 @@ defmodule Weddingsite.Guests do
   def change_person(%Person{} = person) do
     Person.changeset(person, %{})
   end
+
+  ########
+  # Public API functions
+
+  # These functions serve the guest-facing static pages
+  ########
+
+  def get_invite_by_code(code) do
+    Invite
+    |> Repo.get_by!(code: code)
+    |> Repo.preload(:people)
+  end
 end
