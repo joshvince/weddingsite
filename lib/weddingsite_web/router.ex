@@ -17,16 +17,25 @@ defmodule WeddingsiteWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+  end
+
+  scope "/admin", WeddingsiteWeb do
+    pipe_through :browser
+
+
     resources "/invites", InviteController
     get "/invites/:id/guests", InviteController, :guests
     post "/invites/:id/update_guests", InviteController, :update_guests
     resources "/people", PersonController
   end
 
-  # Other scopes may use custom stacks.
+  # Our API serves the frontend client app
   scope "/api", WeddingsiteWeb do
     pipe_through :api
 
     get "/codes", CodeController, :get_new_code
+    get "/rsvp/:code", RSVPController, :show_json
+    post "/rsvp/:code", RSVPController, :rsvp_reply
+
   end
 end

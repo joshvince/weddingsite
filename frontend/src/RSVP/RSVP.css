@@ -1,0 +1,15 @@
+.guestAttendance {
+  display: flex;
+  align-items: center;
+}
+
+.attendanceButton {
+  margin: 1rem;
+  padding: 0.4rem;
+  border: 1px solid black;
+  border-radius: 2px;
+}
+
+.active {
+  font-weight: 800;
+}

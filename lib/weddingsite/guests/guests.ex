@@ -236,4 +236,41 @@ defmodule Weddingsite.Guests do
   def change_person(%Person{} = person) do
     Person.changeset(person, %{})
   end
+
+  ########
+  # Public API functions
+
+  # These functions serve the guest-facing static pages
+  ########
+
+  def get_invite_by_code(code) do
+    Invite
+    |> Repo.get_by!(code: code)
+    |> Repo.preload(:people)
+  end
+
+  def rsvp_reply(code, rsvp_info) do
+    Enum.map(rsvp_info, &rsvp_one_person(&1))
+
+    Invite
+    |> Repo.get_by!(code: code)
+    |> Repo.preload(:people)
+  end
+
+  defp rsvp_one_person(%{"id" => id} = rsvp_data) do
+    attrs = parse_one_rsvp(rsvp_data)
+    person = Repo.get!(Person, id)
+
+    case update_person(person, attrs) do
+      {:ok, updated_person} -> updated_person
+      {:error, error} -> error
+    end
+  end
+
+  defp parse_one_rsvp(%{"dessert_choice" => nil} = rsvp_data), do: rsvp_data
+
+  defp parse_one_rsvp(%{"dessert_choice" => dessert_choice} = rsvp_data) when is_binary(dessert_choice) do
+    %{rsvp_data | "dessert_choice" => String.to_atom(dessert_choice)}
+  end
+
 end
