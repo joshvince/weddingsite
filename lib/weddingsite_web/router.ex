@@ -29,11 +29,13 @@ defmodule WeddingsiteWeb.Router do
     resources "/people", PersonController
   end
 
-  # Other scopes may use custom stacks.
+  # Our API serves the frontend client app
   scope "/api", WeddingsiteWeb do
     pipe_through :api
 
     get "/codes", CodeController, :get_new_code
     get "/rsvp/:code", RSVPController, :show_json
+    post "/rsvp/:code", RSVPController, :rsvp_reply
+
   end
 end

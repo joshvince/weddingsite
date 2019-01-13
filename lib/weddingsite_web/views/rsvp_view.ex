@@ -11,6 +11,8 @@ defmodule WeddingsiteWeb.RSVPView do
   end
 
   defp render_one_guest(person) do
-    %{first_name: person.first_name, last_name: person.last_name, id: person.id, attending: person.attending}
+    %{first_name: person.first_name, last_name: person.last_name, id: person.id,
+      attending: person.attending, dessert_choice: person.dessert_choice,
+      dietary_requirements: person.dietary_requirements}
   end
 end

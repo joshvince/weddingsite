@@ -7,13 +7,13 @@ const GuestAttendance = ({guestData, rsvpAction}) => {
       <h2>{guestData.first_name}</h2>
       <div
         className={`attendanceButton positive ${guestData.attending ? "active" : ""}`}
-        onClick={e => rsvpAction(guestData, true)}
+        onClick={e => rsvpAction(guestData, {attending: true})}
       >
         Yes, I can attend
       </div>
       <div
         className={`attendanceButton negative ${guestData.attending ? "" : "active"}`}
-        onClick={e => rsvpAction(guestData, false)}
+        onClick={e => rsvpAction(guestData, {attending: false})}
       >
         No, I can't attend
       </div>

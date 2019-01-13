@@ -5,7 +5,9 @@ class RSVPContainer extends Component {
   constructor(props) {
     super(props)
     this.state = { invite: null, loading: true, rsvps: [] }
+
     this.rsvpForGuest = this.rsvpForGuest.bind(this);
+    this.submitRSVP = this.submitRSVP.bind(this);
   }
 
   componentDidMount = () => {
@@ -23,10 +25,35 @@ class RSVPContainer extends Component {
 
   rsvpForGuest = (guestData, reply) => {
     let newState = this.state.rsvps.filter(g => g.id !== guestData.id)
-    guestData.attending = reply
+    // guestData.attending = reply
+    guestData = {...guestData, ...reply}
     newState.unshift(guestData)
     newState.sort((a,b) => a.id - b.id)
     this.setState({rsvps: newState})
+  }
+
+  postRSVP = () => {
+    let inviteCode = this.props.match.params.code;
+    let data = {
+      code: inviteCode,
+      rsvps: this.state.rsvps
+    };
+
+    fetch(`/api/rsvp/${inviteCode}`,{
+      method: 'POST',
+      body: JSON.stringify(data),
+      headers:{
+        'Content-Type': 'application/json'
+      }
+    })
+    .then(res => res.json())
+    .then(response => console.log('Success:', JSON.stringify(response)))
+    .catch(error => console.error('Error:', error));
+  }
+
+  submitRSVP = (e) => {
+    e.preventDefault();
+    this.postRSVP()
   }
 
   render() {
@@ -37,6 +64,7 @@ class RSVPContainer extends Component {
         invite={this.state.invite}
         rsvps={this.state.rsvps}
         rsvpAction={this.rsvpForGuest}
+        submitAction={this.submitRSVP}
       />
     return (
       <div>
