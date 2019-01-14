@@ -25,8 +25,8 @@ class RSVPContainer extends Component {
 
   rsvpForGuest = (guestData, reply) => {
     let newState = this.state.rsvps.filter(g => g.id !== guestData.id)
-    // guestData.attending = reply
-    guestData = {...guestData, ...reply}
+    let rsvpAt = {rsvp_at: new Date()}
+    guestData = {...guestData, ...reply, ...rsvpAt}
     newState.unshift(guestData)
     newState.sort((a,b) => a.id - b.id)
     this.setState({rsvps: newState})

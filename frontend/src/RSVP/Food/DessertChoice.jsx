@@ -1,5 +1,5 @@
 import React from 'react';
-import './RSVP.css';
+// import './RSVP.css';
 
 const DessertChoice = ({guestData, rsvpAction}) => {
   let choice = guestData.dessert_choice;

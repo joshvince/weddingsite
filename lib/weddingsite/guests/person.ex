@@ -21,7 +21,7 @@ defmodule Weddingsite.Guests.Person do
   @doc false
   def changeset(person, attrs) do
     fields =  [:first_name, :last_name, :email, :day_guest, :attending,
-                :dessert_choice, :dietary_requirements]
+                :dessert_choice, :dietary_requirements, :rsvp_at]
     req_fields = [:first_name, :last_name, :email, :day_guest]
 
     person

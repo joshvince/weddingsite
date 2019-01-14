@@ -1,8 +1,8 @@
 import React from 'react';
 
 import GuestAttendance from './GuestAttendance.jsx';
-import DessertChoice from "./DessertChoice.jsx";
-import DietaryRequirements from "./DietaryRequirements.jsx";
+import Attendance from "./Attendance/Attendance.jsx";
+import GuestRSVP from "./GuestRSVP.jsx";
 
 const DayGuestText = "We'd love for you to join us to celebrate our wedding at 1pm on 22nd June 2019."
 const EveningGuestText = "We'd love for you to join us to celebrate our wedding at our evening reception at 6:30pm on 22nd June 2019."
@@ -21,11 +21,7 @@ const RSVP = ({invite, rsvps, rsvpAction, submitAction}) => {
       {inviteType}
       {rsvps.map((r,i) => {
         return(
-          <div key={`rsvp${i}`}>
-            <GuestAttendance guestData={r} rsvpAction={rsvpAction} />
-            <DessertChoice guestData={r} rsvpAction={rsvpAction} />
-            <DietaryRequirements guestData={r} rsvpAction={rsvpAction}/>
-          </div>
+          <GuestRSVP key={`rsvp${i}`} guestData={r} rsvpAction={rsvpAction} />
         )
       })}
       <button onClick={e => submitAction(e)}>Submit</button>
