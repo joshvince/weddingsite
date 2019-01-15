@@ -16,11 +16,15 @@ class DietaryRequirements extends Component {
 
   render() {
     return (
-      <div>
-        <label>
-          Dietary Requirements
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
-        </label>
+      <div className="mt-4">
+        <p className="text-grey">Any dietary requirements?</p>
+          <input
+            className="shadow rounded border w-full focus:outline-none
+                        focus:shadow-outline py-2 px-3 mt-2 text-grey-darker leading-tight"
+            type="text"
+            value={this.state.value}
+            onChange={this.handleChange}
+          />
       </div>
     );
   }

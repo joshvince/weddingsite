@@ -4,9 +4,9 @@ import RSVP from "./RSVP";
 class RSVPContainer extends Component {
   constructor(props) {
     super(props)
-    this.state = { invite: null, loading: true, rsvps: [] }
+    this.state = { invite: null, loading: true, rsvps: [], everybodyComing: false, everybodyRSVP: false }
 
-    this.rsvpForGuest = this.rsvpForGuest.bind(this);
+    this.handleOneRSVP = this.handleOneRSVP.bind(this);
     this.submitRSVP = this.submitRSVP.bind(this);
   }
 
@@ -18,18 +18,33 @@ class RSVPContainer extends Component {
       this.setState({
         invite: data,
         loading: false,
-        rsvps: data.guests.sort((a,b) => a.id - b.id)
+        rsvps: data.guests.sort((a,b) => a.id - b.id),
+        everybodyComing: this.checkAttendees(data.guests),
+        everybodyRSVP: this.checkRSVP(data.guests)
       })
     })
   }
 
-  rsvpForGuest = (guestData, reply) => {
+  checkRSVP = (guests) => guests.every(x => x.rsvp_at != null)
+
+  checkAttendees = (guests) => guests.every(x => x.attending)
+
+  handleOneRSVP = (guestData, reply) => {
     let newState = this.state.rsvps.filter(g => g.id !== guestData.id)
     let rsvpAt = {rsvp_at: new Date()}
     guestData = {...guestData, ...reply, ...rsvpAt}
     newState.unshift(guestData)
     newState.sort((a,b) => a.id - b.id)
-    this.setState({rsvps: newState})
+    this.setState({
+      rsvps: newState,
+      everybodyComing: this.checkAttendees(newState),
+      everybodyRSVP: this.checkRSVP(newState)
+    })
+  }
+
+  submitRSVP = (e) => {
+    e.preventDefault();
+    this.postRSVP()
   }
 
   postRSVP = () => {
@@ -51,20 +66,18 @@ class RSVPContainer extends Component {
     .catch(error => console.error('Error:', error));
   }
 
-  submitRSVP = (e) => {
-    e.preventDefault();
-    this.postRSVP()
-  }
-
   render() {
+    let {invite, rsvps, everybodyComing, everybodyRSVP} = this.state;
     let content = this.state.loading ?
       "Loading..."
       :
       <RSVP
-        invite={this.state.invite}
-        rsvps={this.state.rsvps}
-        rsvpAction={this.rsvpForGuest}
+        invite={invite}
+        rsvps={rsvps}
+        rsvpAction={this.handleOneRSVP}
         submitAction={this.submitRSVP}
+        everybodyComing={everybodyComing}
+        everybodyRSVP={everybodyRSVP}
       />
     return (
       <div>
