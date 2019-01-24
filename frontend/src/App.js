@@ -9,7 +9,7 @@ import './App.css';
 class App extends Component {
   render() {
     return (
-      <div className="container mx-auto font-sans">
+      <div className="font-sans">
         <Router>
           <div>
             <Route path="/" exact component={Home} />

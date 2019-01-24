@@ -20,7 +20,7 @@ class FoodContainer extends Component {
           <div>
             <div className="flex-col">
               <p className="mb-2 text-grey">Choose a dessert</p>
-              <div className="flex justify-between md:justify-start">
+              <div className="flex justify-around md:justify-start">
                 <DessertChoice
                   guestData={this.props.guestData}
                   rsvpAction={this.props.rsvpAction}

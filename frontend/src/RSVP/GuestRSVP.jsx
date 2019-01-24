@@ -4,10 +4,10 @@ import FoodContainer from "./Food/FoodContainer.jsx";
 
 const GuestRSVP = ({guestData, rsvpAction}) => {
   return (
-    <div className="max-w-md sm:flex sm:flex-col md:flex-row rounded border border-solid border-lightgrey shadow m-4 p-6">
+    <div className="max-w-md sm:flex sm:flex-col md:flex-row rounded border border-solid border-lightgrey shadow my-8 p-6">
       <div className="flex flex-col">
         <h2 className="mb-6">{guestData.first_name}</h2>
-        <div className="flex justify-between md:justify-start">
+        <div className="flex justify-around md:justify-start">
           <Attendance guestData={guestData} rsvpAction={rsvpAction} type="positive" />
           <Attendance guestData={guestData} rsvpAction={rsvpAction} type="negative" />
         </div>

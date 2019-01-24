@@ -19,15 +19,12 @@ class RSVPContainer extends Component {
         invite: data,
         loading: false,
         rsvps: data.guests.sort((a,b) => a.id - b.id),
-        everybodyComing: this.checkAttendees(data.guests),
         everybodyRSVP: this.checkRSVP(data.guests)
       })
     })
   }
 
   checkRSVP = (guests) => guests.every(x => x.rsvp_at != null)
-
-  checkAttendees = (guests) => guests.every(x => x.attending)
 
   handleOneRSVP = (guestData, reply) => {
     let newState = this.state.rsvps.filter(g => g.id !== guestData.id)
@@ -37,7 +34,6 @@ class RSVPContainer extends Component {
     newState.sort((a,b) => a.id - b.id)
     this.setState({
       rsvps: newState,
-      everybodyComing: this.checkAttendees(newState),
       everybodyRSVP: this.checkRSVP(newState)
     })
   }
@@ -67,7 +63,7 @@ class RSVPContainer extends Component {
   }
 
   render() {
-    let {invite, rsvps, everybodyComing, everybodyRSVP} = this.state;
+    let {invite, rsvps, everybodyRSVP} = this.state;
     let content = this.state.loading ?
       "Loading..."
       :
@@ -76,7 +72,6 @@ class RSVPContainer extends Component {
         rsvps={rsvps}
         rsvpAction={this.handleOneRSVP}
         submitAction={this.submitRSVP}
-        everybodyComing={everybodyComing}
         everybodyRSVP={everybodyRSVP}
       />
     return (
