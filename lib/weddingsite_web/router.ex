@@ -33,7 +33,8 @@ defmodule WeddingsiteWeb.Router do
   scope "/api", WeddingsiteWeb do
     pipe_through :api
 
-    get "/codes", CodeController, :get_new_code
+    get "/codes/get", CodeController, :get_new_code
+    get "/rsvp_check", RSVPController, :check_code
     get "/rsvp/:code", RSVPController, :show_json
     post "/rsvp/:code", RSVPController, :rsvp_reply
 

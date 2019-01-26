@@ -16,4 +16,16 @@ defmodule WeddingsiteWeb.RSVPController do
     render(conn, "rsvp.json", invite: invite)
   end
 
+  def check_code(conn, %{"code" => code}) do
+    if Guests.check_rsvp_code(code) do
+      conn
+      |> put_status(200)
+      |> render("codecheck.json", %{resp: "Code was correct"})
+    else
+      conn
+      |> put_status(404)
+      |> render("codecheck.json", %{resp: "Keep trying"})
+    end
+  end
+
 end

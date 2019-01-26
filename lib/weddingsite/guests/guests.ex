@@ -257,6 +257,13 @@ defmodule Weddingsite.Guests do
     |> Repo.preload(:people)
   end
 
+  def check_rsvp_code(code) do
+    case Repo.get_by(Invite, code: code) do
+      nil -> false
+      %Invite{} -> true
+    end
+  end
+
   defp rsvp_one_person(%{"id" => id} = rsvp_data) do
     attrs = parse_one_rsvp(rsvp_data)
     person = Repo.get!(Person, id)

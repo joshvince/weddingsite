@@ -6,6 +6,10 @@ defmodule WeddingsiteWeb.RSVPView do
     %{family_name: invite.family_name, guests: guest_list, code: invite.code, day_guests: invite.day_guests}
   end
 
+  def render("codecheck.json", %{resp: resp}) do
+    %{resp: resp}
+  end
+
   defp render_guests(people_list) do
     Enum.map(people_list, &render_one_guest(&1))
   end

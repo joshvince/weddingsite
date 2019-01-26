@@ -157,4 +157,18 @@ defmodule Weddingsite.GuestsTest do
       assert %Ecto.Changeset{} = Guests.change_person(person)
     end
   end
+
+  describe "rsvp" do
+    alias Weddingsite.Guests
+
+    test "check_code returns true if the code already exists" do
+      %Guests.Invite{code: code} = invite_fixture()
+      assert Guests.check_code(code)
+    end
+
+    test "check_code returns false if the code does not exist" do
+      invite = invite_fixture()
+      refute Guests.check_code("DONT EXIST")
+    end
+  end
 end
