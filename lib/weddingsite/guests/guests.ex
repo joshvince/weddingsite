@@ -250,11 +250,11 @@ defmodule Weddingsite.Guests do
   end
 
   def rsvp_reply(code, rsvp_info) do
-    Enum.map(rsvp_info, &rsvp_one_person(&1))
-
-    Invite
-    |> Repo.get_by!(code: code)
-    |> Repo.preload(:people)
+    rsvps = Enum.map(rsvp_info, &rsvp_one_person(&1))
+    case all_rsvp_successfully?(rsvps) do
+      false -> {:error, "Couldn't update the RSVP"}
+      true -> {:ok, get_invite_by_code(code)}
+    end
   end
 
   def check_rsvp_code(code) do
@@ -268,16 +268,19 @@ defmodule Weddingsite.Guests do
     attrs = parse_one_rsvp(rsvp_data)
     person = Repo.get!(Person, id)
 
-    case update_person(person, attrs) do
-      {:ok, updated_person} -> updated_person
-      {:error, error} -> error
-    end
+    update_person(person, attrs)
   end
 
   defp parse_one_rsvp(%{"dessert_choice" => nil} = rsvp_data), do: rsvp_data
 
   defp parse_one_rsvp(%{"dessert_choice" => dessert_choice} = rsvp_data) when is_binary(dessert_choice) do
     %{rsvp_data | "dessert_choice" => String.to_atom(dessert_choice)}
+  end
+
+  defp all_rsvp_successfully?(rsvps) do
+    rsvps
+    |> Enum.map(fn {status, rsvp} -> status end)
+    |> Enum.all?(fn status -> status == :ok end)
   end
 
 end

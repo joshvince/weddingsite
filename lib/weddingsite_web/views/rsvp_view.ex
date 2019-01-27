@@ -10,6 +10,10 @@ defmodule WeddingsiteWeb.RSVPView do
     %{resp: resp}
   end
 
+  def render("error.json", _params) do
+    %{error: "Couldn't update the RSVP"}
+  end
+
   defp render_guests(people_list) do
     Enum.map(people_list, &render_one_guest(&1))
   end

@@ -9,12 +9,14 @@ defmodule WeddingsiteWeb.RSVPController do
   end
 
   def rsvp_reply(conn, %{"code" => code, "rsvps" => rsvps} = data) do
-    IO.inspect("code was #{code}")
-    Enum.each(rsvps, fn r -> IO.inspect(r) end)
-
-    invite = Guests.rsvp_reply(code, rsvps)
-    Enum.each(invite.people, fn p -> IO.inspect("invite attendee: #{p.id}") end)
-    render(conn, "rsvp.json", invite: invite)
+    case Guests.rsvp_reply(code, rsvps) do
+      {:ok, %Guests.Invite{} = invite} ->
+        render(conn, "rsvp.json", invite: invite)
+      {:error, _reason} ->
+        conn
+        |> put_status(500)
+        |> render(conn, "error.json")
+    end
   end
 
   def check_code(conn, %{"code" => code}) do
