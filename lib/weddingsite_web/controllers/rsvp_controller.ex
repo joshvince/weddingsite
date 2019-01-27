@@ -9,10 +9,11 @@ defmodule WeddingsiteWeb.RSVPController do
   end
 
   def rsvp_reply(conn, %{"code" => code, "rsvps" => rsvps} = data) do
-    IO.inspect data
-    #  NOW WE NEED TO UPDATE THE INVITE WITH THIS RSVP DATA
-    invite = Guests.rsvp_reply(code, rsvps)
+    IO.inspect("code was #{code}")
+    Enum.each(rsvps, fn r -> IO.inspect(r) end)
 
+    invite = Guests.rsvp_reply(code, rsvps)
+    Enum.each(invite.people, fn p -> IO.inspect("invite attendee: #{p.id}") end)
     render(conn, "rsvp.json", invite: invite)
   end
 

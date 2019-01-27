@@ -3,7 +3,7 @@ defmodule WeddingsiteWeb.PersonControllerTest do
 
   alias Weddingsite.Guests
 
-  @create_attrs %{attending: true, day_guest: true, dessert_choice: :raspberry_cheesecake, dietary_requirements: "some dietary_requirements", email: "some email", first_name: "some first_name", last_name: "some last_name", rsvp_at: ~D[2010-04-17]}
+  @create_attrs %{attending: true, day_guest: true, dessert_choice: :raspberry_cheesecake, dietary_requirements: "some dietary_requirements", email: "some email", first_name: "some first_name", last_name: "some last_name"}
   @update_attrs %{attending: false, day_guest: false, dessert_choice: :chocolate_tart, dietary_requirements: "some updated dietary_requirements", email: "some updated email", first_name: "some updated first_name", last_name: "some updated last_name", rsvp_at: ~D[2011-05-18]}
   @invalid_attrs %{attending: nil, day_guest: nil, dessert_choice: "DROPDB", dietary_requirements: nil, email: nil, first_name: nil, last_name: nil, rsvp_at: nil}
 
@@ -30,15 +30,16 @@ defmodule WeddingsiteWeb.PersonControllerTest do
     test "redirects to show when data is valid", %{conn: conn} do
       conn = post(conn, Routes.person_path(conn, :create), person: @create_attrs)
 
+      # IO.inspect redirected_params(conn)
       assert %{id: id} = redirected_params(conn)
       assert redirected_to(conn) == Routes.person_path(conn, :show, id)
 
-      conn = get(conn, Routes.person_path(conn, :show, id))
+      conn = get(recycle(conn), Routes.person_path(conn, :show, id))
       assert html_response(conn, 200) =~ "Show Person"
     end
 
     test "renders errors when data is invalid", %{conn: conn} do
-      conn = post(conn, Routes.person_path(conn, :create), person: @invalid_attrs)
+      conn = post(build_conn(), Routes.person_path(conn, :create), person: @invalid_attrs)
       assert html_response(conn, 200) =~ "New Person"
     end
   end
