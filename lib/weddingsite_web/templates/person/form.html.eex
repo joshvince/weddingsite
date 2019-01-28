@@ -21,14 +21,6 @@
   <%= checkbox f, :day_guest %>
   <%= error_tag f, :day_guest %>
 
-  <%= label f, :rsvp_at %>
-  <%= date_select f, :rsvp_at %>
-  <%= error_tag f, :rsvp_at %>
-
-  <%= label f, :attending %>
-  <%= checkbox f, :attending %>
-  <%= error_tag f, :attending %>
-
   <%= label f, :dessert_choice %>
   <%= text_input f, :dessert_choice %>
   <%= error_tag f, :dessert_choice %>

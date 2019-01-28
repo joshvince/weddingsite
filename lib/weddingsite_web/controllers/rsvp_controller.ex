@@ -9,11 +9,26 @@ defmodule WeddingsiteWeb.RSVPController do
   end
 
   def rsvp_reply(conn, %{"code" => code, "rsvps" => rsvps} = data) do
-    IO.inspect data
-    #  NOW WE NEED TO UPDATE THE INVITE WITH THIS RSVP DATA
-    invite = Guests.rsvp_reply(code, rsvps)
+    case Guests.rsvp_reply(code, rsvps) do
+      {:ok, %Guests.Invite{} = invite} ->
+        render(conn, "rsvp.json", invite: invite)
+      {:error, _reason} ->
+        conn
+        |> put_status(500)
+        |> render(conn, "error.json")
+    end
+  end
 
-    render(conn, "rsvp.json", invite: invite)
+  def check_code(conn, %{"code" => code}) do
+    if Guests.check_rsvp_code(code) do
+      conn
+      |> put_status(200)
+      |> render("codecheck.json", %{resp: "Code was correct"})
+    else
+      conn
+      |> put_status(404)
+      |> render("codecheck.json", %{resp: "Keep trying"})
+    end
   end
 
 end
