@@ -12,7 +12,8 @@ const Header = ({ dayGuests, guests }) => {
   return (
     <div className="max-w-lg mx-auto pt-10 px-6">
       <div className="container mx-auto flex flex-col ">
-        <h1 className="text-4xl">{guestNames}</h1>
+        <h1 className="text-4xl text-blue-dark font-extrabold">{guestNames}</h1>
+        <div className="bg-blue-light h-1 w-32 mt-4"></div>
         <p className="text-xl py-6">
           We'd love for you to join us to celebrate our wedding
         </p>
@@ -29,7 +30,9 @@ const Header = ({ dayGuests, guests }) => {
             subtitle=""
           />
         </div>
-        <h2 className="text-2xl mt-8 mb-4">Let us know if you can make it</h2>
+        <h2 className="text-2xl font-extrabold text-blue-dark mt-8 mb-4">
+          Let us know if you can make it
+        </h2>
       </div>
     </div>
   );
