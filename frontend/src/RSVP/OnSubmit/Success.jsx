@@ -4,17 +4,15 @@ import { ReactComponent as Info } from "./info.svg";
 import { ReactComponent as Party } from "../Attendance/alcohol.svg";
 
 import InfoItem from "./InfoItem";
+import Attending from "./Attending";
+import NotAttending from "./NotAttending";
 
-const Success = () => {
+const Success = ({anyoneComing}) => {
+  let content = anyoneComing ? <Attending/> : <NotAttending/>
   return (
     <div className="min-h-screen max-w-lg mx-auto py-10 px-6">
       <div className="container mx-auto flex flex-col text-grey-dark mt-16">
-        <div className="text-center w-full mb-8 md:mb-16">
-          <Party className="h-32 w-32 md:h-48 md:w-48 mb-8" />
-          <h1 className="text-4xl text-blue-dark font-extrabold">
-            See you there!
-          </h1>
-        </div>
+        {content}
         <div className="flex flex-col md:flex-row justify-center items-center">
           <InfoItem
             icon={<Info/>}

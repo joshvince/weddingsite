@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import RSVP from "./RSVP";
-import { Redirect } from "react-router-dom";
+import Success from "./OnSubmit/Success";
 
 class RSVPContainer extends Component {
   constructor(props) {
@@ -9,15 +9,14 @@ class RSVPContainer extends Component {
       invite: null,
       loading: true,
       rsvps: [],
-      everybodyComing: false,
       everybodyRSVP: false,
-      triggerRedirect: false,
-      redirectPath: null
+      anyoneComing: false,
+      formSubmitted: false
     };
 
     this.handleOneRSVP = this.handleOneRSVP.bind(this);
     this.submitRSVP = this.submitRSVP.bind(this);
-    this.handleRedirect = this.handleRedirect.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentDidMount = () => {
@@ -36,6 +35,8 @@ class RSVPContainer extends Component {
 
   checkRSVP = guests => guests.every(x => x.rsvp_at != null);
 
+  checkAnyoneComing = guests => guests.some(x => x.attending == true);
+
   handleOneRSVP = (guestData, reply) => {
     let newState = this.state.rsvps.filter(g => g.id !== guestData.id);
     let rsvpAt = { rsvp_at: new Date() };
@@ -44,7 +45,8 @@ class RSVPContainer extends Component {
     newState.sort((a, b) => a.id - b.id);
     this.setState({
       rsvps: newState,
-      everybodyRSVP: this.checkRSVP(newState)
+      everybodyRSVP: this.checkRSVP(newState),
+      anyoneComing: this.checkAnyoneComing(newState)
     });
   };
 
@@ -63,15 +65,14 @@ class RSVPContainer extends Component {
         "Content-Type": "application/json"
       }
     })
-      .then(res => this.handleRedirect(res))
+      .then(res => this.handleSubmit(res))
       .catch(error => console.error("Error:", error));
   };
 
-  handleRedirect = (resp) => {
+  handleSubmit = (resp) => {
     if (resp.status === 200) {
       this.setState({
-        triggerRedirect: true,
-        redirectPath: '/attending'
+        formSubmitted: true
       })
     }
     else {
@@ -80,12 +81,14 @@ class RSVPContainer extends Component {
   }
 
   render() {
-    let { invite, rsvps, everybodyRSVP, triggerRedirect, redirectPath } = this.state;
+    let { invite, rsvps, everybodyRSVP, formSubmitted, anyoneComing } = this.state;
 
-    if (triggerRedirect) return <Redirect to={{pathname: redirectPath}} />
+    if (formSubmitted) return <Success anyoneComing={anyoneComing} />
 
     let content = this.state.loading ? (
-      "Loading..."
+      <div className="w-screen h-screen text-center py-32">
+        <h1 className="font-extrabold text-grey-dark">Loading...</h1>
+      </div>
     ) : (
       <RSVP
         invite={invite}
