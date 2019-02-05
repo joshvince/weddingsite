@@ -6,7 +6,7 @@ const GuestRSVP = ({guestData, rsvpAction}) => {
   return (
     <div className="bg-white max-w-md sm:flex sm:flex-col md:flex-row rounded shadow-lg my-8 p-6">
       <div className="flex flex-col">
-        <h2 className="mb-6 font-extrabold text-blue-dark">{guestData.first_name}</h2>
+        <h2 className="mb-6 font-extrabold text-blue">{guestData.first_name}</h2>
         <div className="flex justify-around md:justify-start">
           <Attendance guestData={guestData} rsvpAction={rsvpAction} type="positive" />
           <Attendance guestData={guestData} rsvpAction={rsvpAction} type="negative" />

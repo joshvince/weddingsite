@@ -13,7 +13,7 @@ const Header = ({ dayGuests, guests }) => {
     <div className="max-w-lg mx-auto pt-10 px-6">
       <div className="container mx-auto flex flex-col ">
         <h1 className="text-4xl text-blue-darker font-extrabold">{guestNames}</h1>
-        <div className="bg-blue-light h-1 w-32 mt-4"></div>
+        <div className="bg-orange h-1 w-32 mt-4"></div>
         <p className="text-xl py-6">
           We'd love for you to join us to celebrate our wedding
         </p>

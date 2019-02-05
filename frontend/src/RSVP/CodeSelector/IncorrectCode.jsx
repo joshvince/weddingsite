@@ -8,8 +8,8 @@ const IncorrectCode = ({toggleError}) => {
         Looks like you entered an incorrect code. <br />Check your email
       </p>
       <button
-        class="bg-transparent hover:bg-blue text-blue-dark font-semibold hover:text-white py-2
-               px-4 border border-blue hover:border-transparent rounded"
+        className="bg-transparent hover:bg-orange text-orange-dark font-semibold hover:text-white py-2
+               px-4 border border-orange hover:border-transparent rounded"
         onClick={e => toggleError()}
       >
         Try again

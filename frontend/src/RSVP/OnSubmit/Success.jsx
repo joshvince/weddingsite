@@ -1,7 +1,6 @@
 import React from "react";
 import { ReactComponent as Contact } from "./contact.svg";
 import { ReactComponent as Info } from "./info.svg";
-import { ReactComponent as Party } from "../Attendance/alcohol.svg";
 
 import InfoItem from "./InfoItem";
 import Attending from "./Attending";

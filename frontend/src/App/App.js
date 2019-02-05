@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
-import Home from "./Home/Home";
-import RSVPContainer from "./RSVP/RSVPContainer";
-import CodeSelector from "./RSVP/CodeSelector/CodeSelector";
+import Nav from "./Nav";
+import Home from "../Home/Home";
+import RSVPContainer from "../RSVP/RSVPContainer";
+import CodeSelector from "../RSVP/CodeSelector/CodeSelector";
 
 class App extends Component {
   render() {
     return (
-      <div className="font-sans bg-grey-lighter text-blue-darkest">
+      <div className="font-sans bg-grey-lighter text-blue-darkest w-screen min-h-screen">
         <Router>
           <div>
+            <Route path="/" component={Nav} />
             <Route path="/" exact component={Home} />
             <Route path="/rsvp" exact component={CodeSelector} />
             <Route path="/rsvp/:code" component={RSVPContainer} />

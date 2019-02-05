@@ -35,7 +35,7 @@ class RSVPContainer extends Component {
 
   checkRSVP = guests => guests.every(x => x.rsvp_at != null);
 
-  checkAnyoneComing = guests => guests.some(x => x.attending == true);
+  checkAnyoneComing = guests => guests.some(x => x.attending === true);
 
   handleOneRSVP = (guestData, reply) => {
     let newState = this.state.rsvps.filter(g => g.id !== guestData.id);
