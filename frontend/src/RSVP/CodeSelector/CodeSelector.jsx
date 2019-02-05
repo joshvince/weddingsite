@@ -3,10 +3,15 @@ import { Redirect } from "react-router-dom";
 import Selector from "./Selector.jsx";
 import IncorrectCode from "./IncorrectCode.jsx";
 
+import Storage from "./Storage";
+import queryString from 'query-string';
+
 class CodeSelector extends Component {
   constructor(props) {
     super(props);
+    let defaultCode = this.setDefaultCode();
     this.state = {
+      defaultCode: defaultCode,
       code: this.props.code || "",
       displayError: false,
       triggerRedirect: false
@@ -15,6 +20,15 @@ class CodeSelector extends Component {
     this.toggleError = this.toggleError.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  setDefaultCode = () => {
+    let defaultCode = Storage.get().code;
+    let parsedQueryString = queryString.parse(this.props.location.search);
+    if (parsedQueryString.code) {
+      defaultCode = parsedQueryString.code;
+    }
+    return defaultCode;
   }
 
   toggleError = () => {
@@ -29,6 +43,7 @@ class CodeSelector extends Component {
     let inviteCode = this.state.code.toLowerCase();
     fetch(`/api/rsvp_check?code=${inviteCode}`).then(res => {
       if (res.status === 200) {
+        Storage.set(inviteCode);
         this.setState({ triggerRedirect: true });
       } else {
         this.toggleError();
@@ -48,6 +63,7 @@ class CodeSelector extends Component {
       <Selector
         inputHandler={this.handleChange}
         submitHandler={this.handleSubmit}
+        defaultCode={this.state.defaultCode}
       />
     );
 
