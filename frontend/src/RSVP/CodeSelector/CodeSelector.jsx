@@ -12,7 +12,7 @@ class CodeSelector extends Component {
     let defaultCode = this.setDefaultCode();
     this.state = {
       defaultCode: defaultCode,
-      code: this.props.code || "",
+      code: this.props.code || defaultCode,
       displayError: false,
       triggerRedirect: false
     };

@@ -3,7 +3,7 @@ import React from "react";
 const Selector = ({inputHandler, submitHandler, defaultCode}) => {
   return (
     <div>
-      <h1 className="font-extrabold text-blue-dark">RSVP</h1>
+      <h1 className="font-extrabold text-blue-darker">RSVP</h1>
       <input
         className="bg-grey-lighter appearance-none border-2 border-grey-lighter rounded
                        w-full mt-8 mb-6 py-2 px-4 text-grey-darker text-xl md:text-2xl leading-tight

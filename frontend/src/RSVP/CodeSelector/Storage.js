@@ -6,7 +6,7 @@ const Storage = {
     return { success: true, code: "code"}
   },
   get: () => {
-    let payload = {success: false, code: null }
+    let payload = {success: false, code: "" }
     if (localStorage.hasOwnProperty(storageKey) ) {
       payload.success = true;
       payload.code = localStorage.getItem(storageKey)
