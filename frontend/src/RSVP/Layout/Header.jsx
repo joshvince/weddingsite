@@ -12,8 +12,10 @@ const Header = ({ dayGuests, guests }) => {
   return (
     <div className="max-w-lg mx-auto pt-10 px-6">
       <div className="container mx-auto flex flex-col ">
-        <h1 className="text-4xl text-blue-dark font-extrabold">{guestNames}</h1>
-        <div className="bg-blue-light h-1 w-32 mt-4"></div>
+        <h1 className="text-4xl text-blue-darker font-extrabold">
+          {guestNames}
+        </h1>
+        <div className="bg-orange h-1 w-32 mt-4" />
         <p className="text-xl py-6">
           We'd love for you to join us to celebrate our wedding
         </p>
@@ -24,13 +26,20 @@ const Header = ({ dayGuests, guests }) => {
             subtitle="Yes, a Saturday"
           />
           <InfoPoint icon={<Clock />} title={inviteText} subtitle="" />
-          <InfoPoint
-            icon={<Pin />}
-            title="Cissbury Barns, Nepcote"
-            subtitle=""
-          />
+          <a
+            href="https://goo.gl/maps/t6Bqu7BfXrM2"
+            className="no-underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <InfoPoint
+              icon={<Pin />}
+              title="Cissbury Barns, Nepcote"
+              subtitle=""
+            />
+          </a>
         </div>
-        <h2 className="text-2xl font-extrabold text-blue-dark mt-8 mb-4">
+        <h2 className="text-2xl font-extrabold text-blue-darker mt-8 mb-4">
           Let us know if you can make it
         </h2>
       </div>

@@ -27,7 +27,7 @@ const RSVP = ({
           })}
           <div className="max-w-md sm:flex sm:flex-col md:flex-row my-4 p-0 justify-end">
             <button
-              className={`w-full md:w-1/2 bg-blue hover:bg-blue-dark text-white
+              className={`w-full md:w-1/2 bg-orange hover:orange text-white
             text-2xl font-bold py-4 px-4 my-6 rounded shadow ${buttonState}`}
               onClick={e => everybodyRSVP && submitAction(e)}
             >

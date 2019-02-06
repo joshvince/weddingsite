@@ -673,7 +673,7 @@ table {
 }
 
 .bg-orange {
-  background-color: #f6993f;
+  background-color: hsl(22, 100%, 74%);
 }
 
 .bg-orange-light {
@@ -773,31 +773,31 @@ table {
 }
 
 .bg-blue-darkest {
-  background-color: #12283a;
+  background-color: hsl(214, 100%, 13%);
 }
 
 .bg-blue-darker {
-  background-color: #1c3d5a;
+  background-color: hsl(214, 100%, 20%);
 }
 
 .bg-blue-dark {
-  background-color: #2779bd;
+  background-color: hsl(214, 85%, 50%);
 }
 
 .bg-blue {
-  background-color: #3490dc;
+  background-color: hsl(214, 85%, 64%);
 }
 
 .bg-blue-light {
-  background-color: #6cb2eb;
+  background-color: hsl(214, 65%, 74%);
 }
 
 .bg-blue-lighter {
-  background-color: #bcdefa;
+  background-color: hsl(214, 100%, 81%);
 }
 
 .bg-blue-lightest {
-  background-color: #eff8ff;
+  background-color: hsl(214, 100%, 95%);
 }
 
 .bg-indigo-darkest {
@@ -965,7 +965,7 @@ table {
 }
 
 .hover\:bg-orange:hover {
-  background-color: #f6993f;
+  background-color: hsl(22, 100%, 74%);
 }
 
 .hover\:bg-orange-light:hover {
@@ -1065,31 +1065,31 @@ table {
 }
 
 .hover\:bg-blue-darkest:hover {
-  background-color: #12283a;
+  background-color: hsl(214, 100%, 13%);
 }
 
 .hover\:bg-blue-darker:hover {
-  background-color: #1c3d5a;
+  background-color: hsl(214, 100%, 20%);
 }
 
 .hover\:bg-blue-dark:hover {
-  background-color: #2779bd;
+  background-color: hsl(214, 85%, 50%);
 }
 
 .hover\:bg-blue:hover {
-  background-color: #3490dc;
+  background-color: hsl(214, 85%, 64%);
 }
 
 .hover\:bg-blue-light:hover {
-  background-color: #6cb2eb;
+  background-color: hsl(214, 65%, 74%);
 }
 
 .hover\:bg-blue-lighter:hover {
-  background-color: #bcdefa;
+  background-color: hsl(214, 100%, 81%);
 }
 
 .hover\:bg-blue-lightest:hover {
-  background-color: #eff8ff;
+  background-color: hsl(214, 100%, 95%);
 }
 
 .hover\:bg-indigo-darkest:hover {
@@ -1257,7 +1257,7 @@ table {
 }
 
 .focus\:bg-orange:focus {
-  background-color: #f6993f;
+  background-color: hsl(22, 100%, 74%);
 }
 
 .focus\:bg-orange-light:focus {
@@ -1357,31 +1357,31 @@ table {
 }
 
 .focus\:bg-blue-darkest:focus {
-  background-color: #12283a;
+  background-color: hsl(214, 100%, 13%);
 }
 
 .focus\:bg-blue-darker:focus {
-  background-color: #1c3d5a;
+  background-color: hsl(214, 100%, 20%);
 }
 
 .focus\:bg-blue-dark:focus {
-  background-color: #2779bd;
+  background-color: hsl(214, 85%, 50%);
 }
 
 .focus\:bg-blue:focus {
-  background-color: #3490dc;
+  background-color: hsl(214, 85%, 64%);
 }
 
 .focus\:bg-blue-light:focus {
-  background-color: #6cb2eb;
+  background-color: hsl(214, 65%, 74%);
 }
 
 .focus\:bg-blue-lighter:focus {
-  background-color: #bcdefa;
+  background-color: hsl(214, 100%, 81%);
 }
 
 .focus\:bg-blue-lightest:focus {
-  background-color: #eff8ff;
+  background-color: hsl(214, 100%, 95%);
 }
 
 .focus\:bg-indigo-darkest:focus {
@@ -1621,7 +1621,7 @@ table {
 }
 
 .border-orange {
-  border-color: #f6993f;
+  border-color: hsl(22, 100%, 74%);
 }
 
 .border-orange-light {
@@ -1721,31 +1721,31 @@ table {
 }
 
 .border-blue-darkest {
-  border-color: #12283a;
+  border-color: hsl(214, 100%, 13%);
 }
 
 .border-blue-darker {
-  border-color: #1c3d5a;
+  border-color: hsl(214, 100%, 20%);
 }
 
 .border-blue-dark {
-  border-color: #2779bd;
+  border-color: hsl(214, 85%, 50%);
 }
 
 .border-blue {
-  border-color: #3490dc;
+  border-color: hsl(214, 85%, 64%);
 }
 
 .border-blue-light {
-  border-color: #6cb2eb;
+  border-color: hsl(214, 65%, 74%);
 }
 
 .border-blue-lighter {
-  border-color: #bcdefa;
+  border-color: hsl(214, 100%, 81%);
 }
 
 .border-blue-lightest {
-  border-color: #eff8ff;
+  border-color: hsl(214, 100%, 95%);
 }
 
 .border-indigo-darkest {
@@ -1913,7 +1913,7 @@ table {
 }
 
 .hover\:border-orange:hover {
-  border-color: #f6993f;
+  border-color: hsl(22, 100%, 74%);
 }
 
 .hover\:border-orange-light:hover {
@@ -2013,31 +2013,31 @@ table {
 }
 
 .hover\:border-blue-darkest:hover {
-  border-color: #12283a;
+  border-color: hsl(214, 100%, 13%);
 }
 
 .hover\:border-blue-darker:hover {
-  border-color: #1c3d5a;
+  border-color: hsl(214, 100%, 20%);
 }
 
 .hover\:border-blue-dark:hover {
-  border-color: #2779bd;
+  border-color: hsl(214, 85%, 50%);
 }
 
 .hover\:border-blue:hover {
-  border-color: #3490dc;
+  border-color: hsl(214, 85%, 64%);
 }
 
 .hover\:border-blue-light:hover {
-  border-color: #6cb2eb;
+  border-color: hsl(214, 65%, 74%);
 }
 
 .hover\:border-blue-lighter:hover {
-  border-color: #bcdefa;
+  border-color: hsl(214, 100%, 81%);
 }
 
 .hover\:border-blue-lightest:hover {
-  border-color: #eff8ff;
+  border-color: hsl(214, 100%, 95%);
 }
 
 .hover\:border-indigo-darkest:hover {
@@ -2205,7 +2205,7 @@ table {
 }
 
 .focus\:border-orange:focus {
-  border-color: #f6993f;
+  border-color: hsl(22, 100%, 74%);
 }
 
 .focus\:border-orange-light:focus {
@@ -2305,31 +2305,31 @@ table {
 }
 
 .focus\:border-blue-darkest:focus {
-  border-color: #12283a;
+  border-color: hsl(214, 100%, 13%);
 }
 
 .focus\:border-blue-darker:focus {
-  border-color: #1c3d5a;
+  border-color: hsl(214, 100%, 20%);
 }
 
 .focus\:border-blue-dark:focus {
-  border-color: #2779bd;
+  border-color: hsl(214, 85%, 50%);
 }
 
 .focus\:border-blue:focus {
-  border-color: #3490dc;
+  border-color: hsl(214, 85%, 64%);
 }
 
 .focus\:border-blue-light:focus {
-  border-color: #6cb2eb;
+  border-color: hsl(214, 65%, 74%);
 }
 
 .focus\:border-blue-lighter:focus {
-  border-color: #bcdefa;
+  border-color: hsl(214, 100%, 81%);
 }
 
 .focus\:border-blue-lightest:focus {
-  border-color: #eff8ff;
+  border-color: hsl(214, 100%, 95%);
 }
 
 .focus\:border-indigo-darkest:focus {
@@ -4985,7 +4985,7 @@ table {
 }
 
 .text-orange {
-  color: #f6993f;
+  color: hsl(22, 100%, 74%);
 }
 
 .text-orange-light {
@@ -5085,31 +5085,31 @@ table {
 }
 
 .text-blue-darkest {
-  color: #12283a;
+  color: hsl(214, 100%, 13%);
 }
 
 .text-blue-darker {
-  color: #1c3d5a;
+  color: hsl(214, 100%, 20%);
 }
 
 .text-blue-dark {
-  color: #2779bd;
+  color: hsl(214, 85%, 50%);
 }
 
 .text-blue {
-  color: #3490dc;
+  color: hsl(214, 85%, 64%);
 }
 
 .text-blue-light {
-  color: #6cb2eb;
+  color: hsl(214, 65%, 74%);
 }
 
 .text-blue-lighter {
-  color: #bcdefa;
+  color: hsl(214, 100%, 81%);
 }
 
 .text-blue-lightest {
-  color: #eff8ff;
+  color: hsl(214, 100%, 95%);
 }
 
 .text-indigo-darkest {
@@ -5277,7 +5277,7 @@ table {
 }
 
 .hover\:text-orange:hover {
-  color: #f6993f;
+  color: hsl(22, 100%, 74%);
 }
 
 .hover\:text-orange-light:hover {
@@ -5377,31 +5377,31 @@ table {
 }
 
 .hover\:text-blue-darkest:hover {
-  color: #12283a;
+  color: hsl(214, 100%, 13%);
 }
 
 .hover\:text-blue-darker:hover {
-  color: #1c3d5a;
+  color: hsl(214, 100%, 20%);
 }
 
 .hover\:text-blue-dark:hover {
-  color: #2779bd;
+  color: hsl(214, 85%, 50%);
 }
 
 .hover\:text-blue:hover {
-  color: #3490dc;
+  color: hsl(214, 85%, 64%);
 }
 
 .hover\:text-blue-light:hover {
-  color: #6cb2eb;
+  color: hsl(214, 65%, 74%);
 }
 
 .hover\:text-blue-lighter:hover {
-  color: #bcdefa;
+  color: hsl(214, 100%, 81%);
 }
 
 .hover\:text-blue-lightest:hover {
-  color: #eff8ff;
+  color: hsl(214, 100%, 95%);
 }
 
 .hover\:text-indigo-darkest:hover {
@@ -5569,7 +5569,7 @@ table {
 }
 
 .focus\:text-orange:focus {
-  color: #f6993f;
+  color: hsl(22, 100%, 74%);
 }
 
 .focus\:text-orange-light:focus {
@@ -5669,31 +5669,31 @@ table {
 }
 
 .focus\:text-blue-darkest:focus {
-  color: #12283a;
+  color: hsl(214, 100%, 13%);
 }
 
 .focus\:text-blue-darker:focus {
-  color: #1c3d5a;
+  color: hsl(214, 100%, 20%);
 }
 
 .focus\:text-blue-dark:focus {
-  color: #2779bd;
+  color: hsl(214, 85%, 50%);
 }
 
 .focus\:text-blue:focus {
-  color: #3490dc;
+  color: hsl(214, 85%, 64%);
 }
 
 .focus\:text-blue-light:focus {
-  color: #6cb2eb;
+  color: hsl(214, 65%, 74%);
 }
 
 .focus\:text-blue-lighter:focus {
-  color: #bcdefa;
+  color: hsl(214, 100%, 81%);
 }
 
 .focus\:text-blue-lightest:focus {
-  color: #eff8ff;
+  color: hsl(214, 100%, 95%);
 }
 
 .focus\:text-indigo-darkest:focus {
@@ -6213,8 +6213,6 @@ table {
   * @import "utilities/skew-transforms";
   */
 @import url('https://rsms.me/inter/inter-ui.css');
-@import url("./App.css");
-@import url("./RSVP/RSVP.css");
 
 @media (min-width: 576px) {
   .sm\:list-reset {
@@ -6321,7 +6319,7 @@ table {
   }
 
   .sm\:bg-orange {
-    background-color: #f6993f;
+    background-color: hsl(22, 100%, 74%);
   }
 
   .sm\:bg-orange-light {
@@ -6421,31 +6419,31 @@ table {
   }
 
   .sm\:bg-blue-darkest {
-    background-color: #12283a;
+    background-color: hsl(214, 100%, 13%);
   }
 
   .sm\:bg-blue-darker {
-    background-color: #1c3d5a;
+    background-color: hsl(214, 100%, 20%);
   }
 
   .sm\:bg-blue-dark {
-    background-color: #2779bd;
+    background-color: hsl(214, 85%, 50%);
   }
 
   .sm\:bg-blue {
-    background-color: #3490dc;
+    background-color: hsl(214, 85%, 64%);
   }
 
   .sm\:bg-blue-light {
-    background-color: #6cb2eb;
+    background-color: hsl(214, 65%, 74%);
   }
 
   .sm\:bg-blue-lighter {
-    background-color: #bcdefa;
+    background-color: hsl(214, 100%, 81%);
   }
 
   .sm\:bg-blue-lightest {
-    background-color: #eff8ff;
+    background-color: hsl(214, 100%, 95%);
   }
 
   .sm\:bg-indigo-darkest {
@@ -6613,7 +6611,7 @@ table {
   }
 
   .sm\:hover\:bg-orange:hover {
-    background-color: #f6993f;
+    background-color: hsl(22, 100%, 74%);
   }
 
   .sm\:hover\:bg-orange-light:hover {
@@ -6713,31 +6711,31 @@ table {
   }
 
   .sm\:hover\:bg-blue-darkest:hover {
-    background-color: #12283a;
+    background-color: hsl(214, 100%, 13%);
   }
 
   .sm\:hover\:bg-blue-darker:hover {
-    background-color: #1c3d5a;
+    background-color: hsl(214, 100%, 20%);
   }
 
   .sm\:hover\:bg-blue-dark:hover {
-    background-color: #2779bd;
+    background-color: hsl(214, 85%, 50%);
   }
 
   .sm\:hover\:bg-blue:hover {
-    background-color: #3490dc;
+    background-color: hsl(214, 85%, 64%);
   }
 
   .sm\:hover\:bg-blue-light:hover {
-    background-color: #6cb2eb;
+    background-color: hsl(214, 65%, 74%);
   }
 
   .sm\:hover\:bg-blue-lighter:hover {
-    background-color: #bcdefa;
+    background-color: hsl(214, 100%, 81%);
   }
 
   .sm\:hover\:bg-blue-lightest:hover {
-    background-color: #eff8ff;
+    background-color: hsl(214, 100%, 95%);
   }
 
   .sm\:hover\:bg-indigo-darkest:hover {
@@ -6905,7 +6903,7 @@ table {
   }
 
   .sm\:focus\:bg-orange:focus {
-    background-color: #f6993f;
+    background-color: hsl(22, 100%, 74%);
   }
 
   .sm\:focus\:bg-orange-light:focus {
@@ -7005,31 +7003,31 @@ table {
   }
 
   .sm\:focus\:bg-blue-darkest:focus {
-    background-color: #12283a;
+    background-color: hsl(214, 100%, 13%);
   }
 
   .sm\:focus\:bg-blue-darker:focus {
-    background-color: #1c3d5a;
+    background-color: hsl(214, 100%, 20%);
   }
 
   .sm\:focus\:bg-blue-dark:focus {
-    background-color: #2779bd;
+    background-color: hsl(214, 85%, 50%);
   }
 
   .sm\:focus\:bg-blue:focus {
-    background-color: #3490dc;
+    background-color: hsl(214, 85%, 64%);
   }
 
   .sm\:focus\:bg-blue-light:focus {
-    background-color: #6cb2eb;
+    background-color: hsl(214, 65%, 74%);
   }
 
   .sm\:focus\:bg-blue-lighter:focus {
-    background-color: #bcdefa;
+    background-color: hsl(214, 100%, 81%);
   }
 
   .sm\:focus\:bg-blue-lightest:focus {
-    background-color: #eff8ff;
+    background-color: hsl(214, 100%, 95%);
   }
 
   .sm\:focus\:bg-indigo-darkest:focus {
@@ -7261,7 +7259,7 @@ table {
   }
 
   .sm\:border-orange {
-    border-color: #f6993f;
+    border-color: hsl(22, 100%, 74%);
   }
 
   .sm\:border-orange-light {
@@ -7361,31 +7359,31 @@ table {
   }
 
   .sm\:border-blue-darkest {
-    border-color: #12283a;
+    border-color: hsl(214, 100%, 13%);
   }
 
   .sm\:border-blue-darker {
-    border-color: #1c3d5a;
+    border-color: hsl(214, 100%, 20%);
   }
 
   .sm\:border-blue-dark {
-    border-color: #2779bd;
+    border-color: hsl(214, 85%, 50%);
   }
 
   .sm\:border-blue {
-    border-color: #3490dc;
+    border-color: hsl(214, 85%, 64%);
   }
 
   .sm\:border-blue-light {
-    border-color: #6cb2eb;
+    border-color: hsl(214, 65%, 74%);
   }
 
   .sm\:border-blue-lighter {
-    border-color: #bcdefa;
+    border-color: hsl(214, 100%, 81%);
   }
 
   .sm\:border-blue-lightest {
-    border-color: #eff8ff;
+    border-color: hsl(214, 100%, 95%);
   }
 
   .sm\:border-indigo-darkest {
@@ -7553,7 +7551,7 @@ table {
   }
 
   .sm\:hover\:border-orange:hover {
-    border-color: #f6993f;
+    border-color: hsl(22, 100%, 74%);
   }
 
   .sm\:hover\:border-orange-light:hover {
@@ -7653,31 +7651,31 @@ table {
   }
 
   .sm\:hover\:border-blue-darkest:hover {
-    border-color: #12283a;
+    border-color: hsl(214, 100%, 13%);
   }
 
   .sm\:hover\:border-blue-darker:hover {
-    border-color: #1c3d5a;
+    border-color: hsl(214, 100%, 20%);
   }
 
   .sm\:hover\:border-blue-dark:hover {
-    border-color: #2779bd;
+    border-color: hsl(214, 85%, 50%);
   }
 
   .sm\:hover\:border-blue:hover {
-    border-color: #3490dc;
+    border-color: hsl(214, 85%, 64%);
   }
 
   .sm\:hover\:border-blue-light:hover {
-    border-color: #6cb2eb;
+    border-color: hsl(214, 65%, 74%);
   }
 
   .sm\:hover\:border-blue-lighter:hover {
-    border-color: #bcdefa;
+    border-color: hsl(214, 100%, 81%);
   }
 
   .sm\:hover\:border-blue-lightest:hover {
-    border-color: #eff8ff;
+    border-color: hsl(214, 100%, 95%);
   }
 
   .sm\:hover\:border-indigo-darkest:hover {
@@ -7845,7 +7843,7 @@ table {
   }
 
   .sm\:focus\:border-orange:focus {
-    border-color: #f6993f;
+    border-color: hsl(22, 100%, 74%);
   }
 
   .sm\:focus\:border-orange-light:focus {
@@ -7945,31 +7943,31 @@ table {
   }
 
   .sm\:focus\:border-blue-darkest:focus {
-    border-color: #12283a;
+    border-color: hsl(214, 100%, 13%);
   }
 
   .sm\:focus\:border-blue-darker:focus {
-    border-color: #1c3d5a;
+    border-color: hsl(214, 100%, 20%);
   }
 
   .sm\:focus\:border-blue-dark:focus {
-    border-color: #2779bd;
+    border-color: hsl(214, 85%, 50%);
   }
 
   .sm\:focus\:border-blue:focus {
-    border-color: #3490dc;
+    border-color: hsl(214, 85%, 64%);
   }
 
   .sm\:focus\:border-blue-light:focus {
-    border-color: #6cb2eb;
+    border-color: hsl(214, 65%, 74%);
   }
 
   .sm\:focus\:border-blue-lighter:focus {
-    border-color: #bcdefa;
+    border-color: hsl(214, 100%, 81%);
   }
 
   .sm\:focus\:border-blue-lightest:focus {
-    border-color: #eff8ff;
+    border-color: hsl(214, 100%, 95%);
   }
 
   .sm\:focus\:border-indigo-darkest:focus {
@@ -10609,7 +10607,7 @@ table {
   }
 
   .sm\:text-orange {
-    color: #f6993f;
+    color: hsl(22, 100%, 74%);
   }
 
   .sm\:text-orange-light {
@@ -10709,31 +10707,31 @@ table {
   }
 
   .sm\:text-blue-darkest {
-    color: #12283a;
+    color: hsl(214, 100%, 13%);
   }
 
   .sm\:text-blue-darker {
-    color: #1c3d5a;
+    color: hsl(214, 100%, 20%);
   }
 
   .sm\:text-blue-dark {
-    color: #2779bd;
+    color: hsl(214, 85%, 50%);
   }
 
   .sm\:text-blue {
-    color: #3490dc;
+    color: hsl(214, 85%, 64%);
   }
 
   .sm\:text-blue-light {
-    color: #6cb2eb;
+    color: hsl(214, 65%, 74%);
   }
 
   .sm\:text-blue-lighter {
-    color: #bcdefa;
+    color: hsl(214, 100%, 81%);
   }
 
   .sm\:text-blue-lightest {
-    color: #eff8ff;
+    color: hsl(214, 100%, 95%);
   }
 
   .sm\:text-indigo-darkest {
@@ -10901,7 +10899,7 @@ table {
   }
 
   .sm\:hover\:text-orange:hover {
-    color: #f6993f;
+    color: hsl(22, 100%, 74%);
   }
 
   .sm\:hover\:text-orange-light:hover {
@@ -11001,31 +10999,31 @@ table {
   }
 
   .sm\:hover\:text-blue-darkest:hover {
-    color: #12283a;
+    color: hsl(214, 100%, 13%);
   }
 
   .sm\:hover\:text-blue-darker:hover {
-    color: #1c3d5a;
+    color: hsl(214, 100%, 20%);
   }
 
   .sm\:hover\:text-blue-dark:hover {
-    color: #2779bd;
+    color: hsl(214, 85%, 50%);
   }
 
   .sm\:hover\:text-blue:hover {
-    color: #3490dc;
+    color: hsl(214, 85%, 64%);
   }
 
   .sm\:hover\:text-blue-light:hover {
-    color: #6cb2eb;
+    color: hsl(214, 65%, 74%);
   }
 
   .sm\:hover\:text-blue-lighter:hover {
-    color: #bcdefa;
+    color: hsl(214, 100%, 81%);
   }
 
   .sm\:hover\:text-blue-lightest:hover {
-    color: #eff8ff;
+    color: hsl(214, 100%, 95%);
   }
 
   .sm\:hover\:text-indigo-darkest:hover {
@@ -11193,7 +11191,7 @@ table {
   }
 
   .sm\:focus\:text-orange:focus {
-    color: #f6993f;
+    color: hsl(22, 100%, 74%);
   }
 
   .sm\:focus\:text-orange-light:focus {
@@ -11293,31 +11291,31 @@ table {
   }
 
   .sm\:focus\:text-blue-darkest:focus {
-    color: #12283a;
+    color: hsl(214, 100%, 13%);
   }
 
   .sm\:focus\:text-blue-darker:focus {
-    color: #1c3d5a;
+    color: hsl(214, 100%, 20%);
   }
 
   .sm\:focus\:text-blue-dark:focus {
-    color: #2779bd;
+    color: hsl(214, 85%, 50%);
   }
 
   .sm\:focus\:text-blue:focus {
-    color: #3490dc;
+    color: hsl(214, 85%, 64%);
   }
 
   .sm\:focus\:text-blue-light:focus {
-    color: #6cb2eb;
+    color: hsl(214, 65%, 74%);
   }
 
   .sm\:focus\:text-blue-lighter:focus {
-    color: #bcdefa;
+    color: hsl(214, 100%, 81%);
   }
 
   .sm\:focus\:text-blue-lightest:focus {
-    color: #eff8ff;
+    color: hsl(214, 100%, 95%);
   }
 
   .sm\:focus\:text-indigo-darkest:focus {
@@ -11928,7 +11926,7 @@ table {
   }
 
   .md\:bg-orange {
-    background-color: #f6993f;
+    background-color: hsl(22, 100%, 74%);
   }
 
   .md\:bg-orange-light {
@@ -12028,31 +12026,31 @@ table {
   }
 
   .md\:bg-blue-darkest {
-    background-color: #12283a;
+    background-color: hsl(214, 100%, 13%);
   }
 
   .md\:bg-blue-darker {
-    background-color: #1c3d5a;
+    background-color: hsl(214, 100%, 20%);
   }
 
   .md\:bg-blue-dark {
-    background-color: #2779bd;
+    background-color: hsl(214, 85%, 50%);
   }
 
   .md\:bg-blue {
-    background-color: #3490dc;
+    background-color: hsl(214, 85%, 64%);
   }
 
   .md\:bg-blue-light {
-    background-color: #6cb2eb;
+    background-color: hsl(214, 65%, 74%);
   }
 
   .md\:bg-blue-lighter {
-    background-color: #bcdefa;
+    background-color: hsl(214, 100%, 81%);
   }
 
   .md\:bg-blue-lightest {
-    background-color: #eff8ff;
+    background-color: hsl(214, 100%, 95%);
   }
 
   .md\:bg-indigo-darkest {
@@ -12220,7 +12218,7 @@ table {
   }
 
   .md\:hover\:bg-orange:hover {
-    background-color: #f6993f;
+    background-color: hsl(22, 100%, 74%);
   }
 
   .md\:hover\:bg-orange-light:hover {
@@ -12320,31 +12318,31 @@ table {
   }
 
   .md\:hover\:bg-blue-darkest:hover {
-    background-color: #12283a;
+    background-color: hsl(214, 100%, 13%);
   }
 
   .md\:hover\:bg-blue-darker:hover {
-    background-color: #1c3d5a;
+    background-color: hsl(214, 100%, 20%);
   }
 
   .md\:hover\:bg-blue-dark:hover {
-    background-color: #2779bd;
+    background-color: hsl(214, 85%, 50%);
   }
 
   .md\:hover\:bg-blue:hover {
-    background-color: #3490dc;
+    background-color: hsl(214, 85%, 64%);
   }
 
   .md\:hover\:bg-blue-light:hover {
-    background-color: #6cb2eb;
+    background-color: hsl(214, 65%, 74%);
   }
 
   .md\:hover\:bg-blue-lighter:hover {
-    background-color: #bcdefa;
+    background-color: hsl(214, 100%, 81%);
   }
 
   .md\:hover\:bg-blue-lightest:hover {
-    background-color: #eff8ff;
+    background-color: hsl(214, 100%, 95%);
   }
 
   .md\:hover\:bg-indigo-darkest:hover {
@@ -12512,7 +12510,7 @@ table {
   }
 
   .md\:focus\:bg-orange:focus {
-    background-color: #f6993f;
+    background-color: hsl(22, 100%, 74%);
   }
 
   .md\:focus\:bg-orange-light:focus {
@@ -12612,31 +12610,31 @@ table {
   }
 
   .md\:focus\:bg-blue-darkest:focus {
-    background-color: #12283a;
+    background-color: hsl(214, 100%, 13%);
   }
 
   .md\:focus\:bg-blue-darker:focus {
-    background-color: #1c3d5a;
+    background-color: hsl(214, 100%, 20%);
   }
 
   .md\:focus\:bg-blue-dark:focus {
-    background-color: #2779bd;
+    background-color: hsl(214, 85%, 50%);
   }
 
   .md\:focus\:bg-blue:focus {
-    background-color: #3490dc;
+    background-color: hsl(214, 85%, 64%);
   }
 
   .md\:focus\:bg-blue-light:focus {
-    background-color: #6cb2eb;
+    background-color: hsl(214, 65%, 74%);
   }
 
   .md\:focus\:bg-blue-lighter:focus {
-    background-color: #bcdefa;
+    background-color: hsl(214, 100%, 81%);
   }
 
   .md\:focus\:bg-blue-lightest:focus {
-    background-color: #eff8ff;
+    background-color: hsl(214, 100%, 95%);
   }
 
   .md\:focus\:bg-indigo-darkest:focus {
@@ -12868,7 +12866,7 @@ table {
   }
 
   .md\:border-orange {
-    border-color: #f6993f;
+    border-color: hsl(22, 100%, 74%);
   }
 
   .md\:border-orange-light {
@@ -12968,31 +12966,31 @@ table {
   }
 
   .md\:border-blue-darkest {
-    border-color: #12283a;
+    border-color: hsl(214, 100%, 13%);
   }
 
   .md\:border-blue-darker {
-    border-color: #1c3d5a;
+    border-color: hsl(214, 100%, 20%);
   }
 
   .md\:border-blue-dark {
-    border-color: #2779bd;
+    border-color: hsl(214, 85%, 50%);
   }
 
   .md\:border-blue {
-    border-color: #3490dc;
+    border-color: hsl(214, 85%, 64%);
   }
 
   .md\:border-blue-light {
-    border-color: #6cb2eb;
+    border-color: hsl(214, 65%, 74%);
   }
 
   .md\:border-blue-lighter {
-    border-color: #bcdefa;
+    border-color: hsl(214, 100%, 81%);
   }
 
   .md\:border-blue-lightest {
-    border-color: #eff8ff;
+    border-color: hsl(214, 100%, 95%);
   }
 
   .md\:border-indigo-darkest {
@@ -13160,7 +13158,7 @@ table {
   }
 
   .md\:hover\:border-orange:hover {
-    border-color: #f6993f;
+    border-color: hsl(22, 100%, 74%);
   }
 
   .md\:hover\:border-orange-light:hover {
@@ -13260,31 +13258,31 @@ table {
   }
 
   .md\:hover\:border-blue-darkest:hover {
-    border-color: #12283a;
+    border-color: hsl(214, 100%, 13%);
   }
 
   .md\:hover\:border-blue-darker:hover {
-    border-color: #1c3d5a;
+    border-color: hsl(214, 100%, 20%);
   }
 
   .md\:hover\:border-blue-dark:hover {
-    border-color: #2779bd;
+    border-color: hsl(214, 85%, 50%);
   }
 
   .md\:hover\:border-blue:hover {
-    border-color: #3490dc;
+    border-color: hsl(214, 85%, 64%);
   }
 
   .md\:hover\:border-blue-light:hover {
-    border-color: #6cb2eb;
+    border-color: hsl(214, 65%, 74%);
   }
 
   .md\:hover\:border-blue-lighter:hover {
-    border-color: #bcdefa;
+    border-color: hsl(214, 100%, 81%);
   }
 
   .md\:hover\:border-blue-lightest:hover {
-    border-color: #eff8ff;
+    border-color: hsl(214, 100%, 95%);
   }
 
   .md\:hover\:border-indigo-darkest:hover {
@@ -13452,7 +13450,7 @@ table {
   }
 
   .md\:focus\:border-orange:focus {
-    border-color: #f6993f;
+    border-color: hsl(22, 100%, 74%);
   }
 
   .md\:focus\:border-orange-light:focus {
@@ -13552,31 +13550,31 @@ table {
   }
 
   .md\:focus\:border-blue-darkest:focus {
-    border-color: #12283a;
+    border-color: hsl(214, 100%, 13%);
   }
 
   .md\:focus\:border-blue-darker:focus {
-    border-color: #1c3d5a;
+    border-color: hsl(214, 100%, 20%);
   }
 
   .md\:focus\:border-blue-dark:focus {
-    border-color: #2779bd;
+    border-color: hsl(214, 85%, 50%);
   }
 
   .md\:focus\:border-blue:focus {
-    border-color: #3490dc;
+    border-color: hsl(214, 85%, 64%);
   }
 
   .md\:focus\:border-blue-light:focus {
-    border-color: #6cb2eb;
+    border-color: hsl(214, 65%, 74%);
   }
 
   .md\:focus\:border-blue-lighter:focus {
-    border-color: #bcdefa;
+    border-color: hsl(214, 100%, 81%);
   }
 
   .md\:focus\:border-blue-lightest:focus {
-    border-color: #eff8ff;
+    border-color: hsl(214, 100%, 95%);
   }
 
   .md\:focus\:border-indigo-darkest:focus {
@@ -16216,7 +16214,7 @@ table {
   }
 
   .md\:text-orange {
-    color: #f6993f;
+    color: hsl(22, 100%, 74%);
   }
 
   .md\:text-orange-light {
@@ -16316,31 +16314,31 @@ table {
   }
 
   .md\:text-blue-darkest {
-    color: #12283a;
+    color: hsl(214, 100%, 13%);
   }
 
   .md\:text-blue-darker {
-    color: #1c3d5a;
+    color: hsl(214, 100%, 20%);
   }
 
   .md\:text-blue-dark {
-    color: #2779bd;
+    color: hsl(214, 85%, 50%);
   }
 
   .md\:text-blue {
-    color: #3490dc;
+    color: hsl(214, 85%, 64%);
   }
 
   .md\:text-blue-light {
-    color: #6cb2eb;
+    color: hsl(214, 65%, 74%);
   }
 
   .md\:text-blue-lighter {
-    color: #bcdefa;
+    color: hsl(214, 100%, 81%);
   }
 
   .md\:text-blue-lightest {
-    color: #eff8ff;
+    color: hsl(214, 100%, 95%);
   }
 
   .md\:text-indigo-darkest {
@@ -16508,7 +16506,7 @@ table {
   }
 
   .md\:hover\:text-orange:hover {
-    color: #f6993f;
+    color: hsl(22, 100%, 74%);
   }
 
   .md\:hover\:text-orange-light:hover {
@@ -16608,31 +16606,31 @@ table {
   }
 
   .md\:hover\:text-blue-darkest:hover {
-    color: #12283a;
+    color: hsl(214, 100%, 13%);
   }
 
   .md\:hover\:text-blue-darker:hover {
-    color: #1c3d5a;
+    color: hsl(214, 100%, 20%);
   }
 
   .md\:hover\:text-blue-dark:hover {
-    color: #2779bd;
+    color: hsl(214, 85%, 50%);
   }
 
   .md\:hover\:text-blue:hover {
-    color: #3490dc;
+    color: hsl(214, 85%, 64%);
   }
 
   .md\:hover\:text-blue-light:hover {
-    color: #6cb2eb;
+    color: hsl(214, 65%, 74%);
   }
 
   .md\:hover\:text-blue-lighter:hover {
-    color: #bcdefa;
+    color: hsl(214, 100%, 81%);
   }
 
   .md\:hover\:text-blue-lightest:hover {
-    color: #eff8ff;
+    color: hsl(214, 100%, 95%);
   }
 
   .md\:hover\:text-indigo-darkest:hover {
@@ -16800,7 +16798,7 @@ table {
   }
 
   .md\:focus\:text-orange:focus {
-    color: #f6993f;
+    color: hsl(22, 100%, 74%);
   }
 
   .md\:focus\:text-orange-light:focus {
@@ -16900,31 +16898,31 @@ table {
   }
 
   .md\:focus\:text-blue-darkest:focus {
-    color: #12283a;
+    color: hsl(214, 100%, 13%);
   }
 
   .md\:focus\:text-blue-darker:focus {
-    color: #1c3d5a;
+    color: hsl(214, 100%, 20%);
   }
 
   .md\:focus\:text-blue-dark:focus {
-    color: #2779bd;
+    color: hsl(214, 85%, 50%);
   }
 
   .md\:focus\:text-blue:focus {
-    color: #3490dc;
+    color: hsl(214, 85%, 64%);
   }
 
   .md\:focus\:text-blue-light:focus {
-    color: #6cb2eb;
+    color: hsl(214, 65%, 74%);
   }
 
   .md\:focus\:text-blue-lighter:focus {
-    color: #bcdefa;
+    color: hsl(214, 100%, 81%);
   }
 
   .md\:focus\:text-blue-lightest:focus {
-    color: #eff8ff;
+    color: hsl(214, 100%, 95%);
   }
 
   .md\:focus\:text-indigo-darkest:focus {
@@ -17535,7 +17533,7 @@ table {
   }
 
   .lg\:bg-orange {
-    background-color: #f6993f;
+    background-color: hsl(22, 100%, 74%);
   }
 
   .lg\:bg-orange-light {
@@ -17635,31 +17633,31 @@ table {
   }
 
   .lg\:bg-blue-darkest {
-    background-color: #12283a;
+    background-color: hsl(214, 100%, 13%);
   }
 
   .lg\:bg-blue-darker {
-    background-color: #1c3d5a;
+    background-color: hsl(214, 100%, 20%);
   }
 
   .lg\:bg-blue-dark {
-    background-color: #2779bd;
+    background-color: hsl(214, 85%, 50%);
   }
 
   .lg\:bg-blue {
-    background-color: #3490dc;
+    background-color: hsl(214, 85%, 64%);
   }
 
   .lg\:bg-blue-light {
-    background-color: #6cb2eb;
+    background-color: hsl(214, 65%, 74%);
   }
 
   .lg\:bg-blue-lighter {
-    background-color: #bcdefa;
+    background-color: hsl(214, 100%, 81%);
   }
 
   .lg\:bg-blue-lightest {
-    background-color: #eff8ff;
+    background-color: hsl(214, 100%, 95%);
   }
 
   .lg\:bg-indigo-darkest {
@@ -17827,7 +17825,7 @@ table {
   }
 
   .lg\:hover\:bg-orange:hover {
-    background-color: #f6993f;
+    background-color: hsl(22, 100%, 74%);
   }
 
   .lg\:hover\:bg-orange-light:hover {
@@ -17927,31 +17925,31 @@ table {
   }
 
   .lg\:hover\:bg-blue-darkest:hover {
-    background-color: #12283a;
+    background-color: hsl(214, 100%, 13%);
   }
 
   .lg\:hover\:bg-blue-darker:hover {
-    background-color: #1c3d5a;
+    background-color: hsl(214, 100%, 20%);
   }
 
   .lg\:hover\:bg-blue-dark:hover {
-    background-color: #2779bd;
+    background-color: hsl(214, 85%, 50%);
   }
 
   .lg\:hover\:bg-blue:hover {
-    background-color: #3490dc;
+    background-color: hsl(214, 85%, 64%);
   }
 
   .lg\:hover\:bg-blue-light:hover {
-    background-color: #6cb2eb;
+    background-color: hsl(214, 65%, 74%);
   }
 
   .lg\:hover\:bg-blue-lighter:hover {
-    background-color: #bcdefa;
+    background-color: hsl(214, 100%, 81%);
   }
 
   .lg\:hover\:bg-blue-lightest:hover {
-    background-color: #eff8ff;
+    background-color: hsl(214, 100%, 95%);
   }
 
   .lg\:hover\:bg-indigo-darkest:hover {
@@ -18119,7 +18117,7 @@ table {
   }
 
   .lg\:focus\:bg-orange:focus {
-    background-color: #f6993f;
+    background-color: hsl(22, 100%, 74%);
   }
 
   .lg\:focus\:bg-orange-light:focus {
@@ -18219,31 +18217,31 @@ table {
   }
 
   .lg\:focus\:bg-blue-darkest:focus {
-    background-color: #12283a;
+    background-color: hsl(214, 100%, 13%);
   }
 
   .lg\:focus\:bg-blue-darker:focus {
-    background-color: #1c3d5a;
+    background-color: hsl(214, 100%, 20%);
   }
 
   .lg\:focus\:bg-blue-dark:focus {
-    background-color: #2779bd;
+    background-color: hsl(214, 85%, 50%);
   }
 
   .lg\:focus\:bg-blue:focus {
-    background-color: #3490dc;
+    background-color: hsl(214, 85%, 64%);
   }
 
   .lg\:focus\:bg-blue-light:focus {
-    background-color: #6cb2eb;
+    background-color: hsl(214, 65%, 74%);
   }
 
   .lg\:focus\:bg-blue-lighter:focus {
-    background-color: #bcdefa;
+    background-color: hsl(214, 100%, 81%);
   }
 
   .lg\:focus\:bg-blue-lightest:focus {
-    background-color: #eff8ff;
+    background-color: hsl(214, 100%, 95%);
   }
 
   .lg\:focus\:bg-indigo-darkest:focus {
@@ -18475,7 +18473,7 @@ table {
   }
 
   .lg\:border-orange {
-    border-color: #f6993f;
+    border-color: hsl(22, 100%, 74%);
   }
 
   .lg\:border-orange-light {
@@ -18575,31 +18573,31 @@ table {
   }
 
   .lg\:border-blue-darkest {
-    border-color: #12283a;
+    border-color: hsl(214, 100%, 13%);
   }
 
   .lg\:border-blue-darker {
-    border-color: #1c3d5a;
+    border-color: hsl(214, 100%, 20%);
   }
 
   .lg\:border-blue-dark {
-    border-color: #2779bd;
+    border-color: hsl(214, 85%, 50%);
   }
 
   .lg\:border-blue {
-    border-color: #3490dc;
+    border-color: hsl(214, 85%, 64%);
   }
 
   .lg\:border-blue-light {
-    border-color: #6cb2eb;
+    border-color: hsl(214, 65%, 74%);
   }
 
   .lg\:border-blue-lighter {
-    border-color: #bcdefa;
+    border-color: hsl(214, 100%, 81%);
   }
 
   .lg\:border-blue-lightest {
-    border-color: #eff8ff;
+    border-color: hsl(214, 100%, 95%);
   }
 
   .lg\:border-indigo-darkest {
@@ -18767,7 +18765,7 @@ table {
   }
 
   .lg\:hover\:border-orange:hover {
-    border-color: #f6993f;
+    border-color: hsl(22, 100%, 74%);
   }
 
   .lg\:hover\:border-orange-light:hover {
@@ -18867,31 +18865,31 @@ table {
   }
 
   .lg\:hover\:border-blue-darkest:hover {
-    border-color: #12283a;
+    border-color: hsl(214, 100%, 13%);
   }
 
   .lg\:hover\:border-blue-darker:hover {
-    border-color: #1c3d5a;
+    border-color: hsl(214, 100%, 20%);
   }
 
   .lg\:hover\:border-blue-dark:hover {
-    border-color: #2779bd;
+    border-color: hsl(214, 85%, 50%);
   }
 
   .lg\:hover\:border-blue:hover {
-    border-color: #3490dc;
+    border-color: hsl(214, 85%, 64%);
   }
 
   .lg\:hover\:border-blue-light:hover {
-    border-color: #6cb2eb;
+    border-color: hsl(214, 65%, 74%);
   }
 
   .lg\:hover\:border-blue-lighter:hover {
-    border-color: #bcdefa;
+    border-color: hsl(214, 100%, 81%);
   }
 
   .lg\:hover\:border-blue-lightest:hover {
-    border-color: #eff8ff;
+    border-color: hsl(214, 100%, 95%);
   }
 
   .lg\:hover\:border-indigo-darkest:hover {
@@ -19059,7 +19057,7 @@ table {
   }
 
   .lg\:focus\:border-orange:focus {
-    border-color: #f6993f;
+    border-color: hsl(22, 100%, 74%);
   }
 
   .lg\:focus\:border-orange-light:focus {
@@ -19159,31 +19157,31 @@ table {
   }
 
   .lg\:focus\:border-blue-darkest:focus {
-    border-color: #12283a;
+    border-color: hsl(214, 100%, 13%);
   }
 
   .lg\:focus\:border-blue-darker:focus {
-    border-color: #1c3d5a;
+    border-color: hsl(214, 100%, 20%);
   }
 
   .lg\:focus\:border-blue-dark:focus {
-    border-color: #2779bd;
+    border-color: hsl(214, 85%, 50%);
   }
 
   .lg\:focus\:border-blue:focus {
-    border-color: #3490dc;
+    border-color: hsl(214, 85%, 64%);
   }
 
   .lg\:focus\:border-blue-light:focus {
-    border-color: #6cb2eb;
+    border-color: hsl(214, 65%, 74%);
   }
 
   .lg\:focus\:border-blue-lighter:focus {
-    border-color: #bcdefa;
+    border-color: hsl(214, 100%, 81%);
   }
 
   .lg\:focus\:border-blue-lightest:focus {
-    border-color: #eff8ff;
+    border-color: hsl(214, 100%, 95%);
   }
 
   .lg\:focus\:border-indigo-darkest:focus {
@@ -21823,7 +21821,7 @@ table {
   }
 
   .lg\:text-orange {
-    color: #f6993f;
+    color: hsl(22, 100%, 74%);
   }
 
   .lg\:text-orange-light {
@@ -21923,31 +21921,31 @@ table {
   }
 
   .lg\:text-blue-darkest {
-    color: #12283a;
+    color: hsl(214, 100%, 13%);
   }
 
   .lg\:text-blue-darker {
-    color: #1c3d5a;
+    color: hsl(214, 100%, 20%);
   }
 
   .lg\:text-blue-dark {
-    color: #2779bd;
+    color: hsl(214, 85%, 50%);
   }
 
   .lg\:text-blue {
-    color: #3490dc;
+    color: hsl(214, 85%, 64%);
   }
 
   .lg\:text-blue-light {
-    color: #6cb2eb;
+    color: hsl(214, 65%, 74%);
   }
 
   .lg\:text-blue-lighter {
-    color: #bcdefa;
+    color: hsl(214, 100%, 81%);
   }
 
   .lg\:text-blue-lightest {
-    color: #eff8ff;
+    color: hsl(214, 100%, 95%);
   }
 
   .lg\:text-indigo-darkest {
@@ -22115,7 +22113,7 @@ table {
   }
 
   .lg\:hover\:text-orange:hover {
-    color: #f6993f;
+    color: hsl(22, 100%, 74%);
   }
 
   .lg\:hover\:text-orange-light:hover {
@@ -22215,31 +22213,31 @@ table {
   }
 
   .lg\:hover\:text-blue-darkest:hover {
-    color: #12283a;
+    color: hsl(214, 100%, 13%);
   }
 
   .lg\:hover\:text-blue-darker:hover {
-    color: #1c3d5a;
+    color: hsl(214, 100%, 20%);
   }
 
   .lg\:hover\:text-blue-dark:hover {
-    color: #2779bd;
+    color: hsl(214, 85%, 50%);
   }
 
   .lg\:hover\:text-blue:hover {
-    color: #3490dc;
+    color: hsl(214, 85%, 64%);
   }
 
   .lg\:hover\:text-blue-light:hover {
-    color: #6cb2eb;
+    color: hsl(214, 65%, 74%);
   }
 
   .lg\:hover\:text-blue-lighter:hover {
-    color: #bcdefa;
+    color: hsl(214, 100%, 81%);
   }
 
   .lg\:hover\:text-blue-lightest:hover {
-    color: #eff8ff;
+    color: hsl(214, 100%, 95%);
   }
 
   .lg\:hover\:text-indigo-darkest:hover {
@@ -22407,7 +22405,7 @@ table {
   }
 
   .lg\:focus\:text-orange:focus {
-    color: #f6993f;
+    color: hsl(22, 100%, 74%);
   }
 
   .lg\:focus\:text-orange-light:focus {
@@ -22507,31 +22505,31 @@ table {
   }
 
   .lg\:focus\:text-blue-darkest:focus {
-    color: #12283a;
+    color: hsl(214, 100%, 13%);
   }
 
   .lg\:focus\:text-blue-darker:focus {
-    color: #1c3d5a;
+    color: hsl(214, 100%, 20%);
   }
 
   .lg\:focus\:text-blue-dark:focus {
-    color: #2779bd;
+    color: hsl(214, 85%, 50%);
   }
 
   .lg\:focus\:text-blue:focus {
-    color: #3490dc;
+    color: hsl(214, 85%, 64%);
   }
 
   .lg\:focus\:text-blue-light:focus {
-    color: #6cb2eb;
+    color: hsl(214, 65%, 74%);
   }
 
   .lg\:focus\:text-blue-lighter:focus {
-    color: #bcdefa;
+    color: hsl(214, 100%, 81%);
   }
 
   .lg\:focus\:text-blue-lightest:focus {
-    color: #eff8ff;
+    color: hsl(214, 100%, 95%);
   }
 
   .lg\:focus\:text-indigo-darkest:focus {
@@ -23142,7 +23140,7 @@ table {
   }
 
   .xl\:bg-orange {
-    background-color: #f6993f;
+    background-color: hsl(22, 100%, 74%);
   }
 
   .xl\:bg-orange-light {
@@ -23242,31 +23240,31 @@ table {
   }
 
   .xl\:bg-blue-darkest {
-    background-color: #12283a;
+    background-color: hsl(214, 100%, 13%);
   }
 
   .xl\:bg-blue-darker {
-    background-color: #1c3d5a;
+    background-color: hsl(214, 100%, 20%);
   }
 
   .xl\:bg-blue-dark {
-    background-color: #2779bd;
+    background-color: hsl(214, 85%, 50%);
   }
 
   .xl\:bg-blue {
-    background-color: #3490dc;
+    background-color: hsl(214, 85%, 64%);
   }
 
   .xl\:bg-blue-light {
-    background-color: #6cb2eb;
+    background-color: hsl(214, 65%, 74%);
   }
 
   .xl\:bg-blue-lighter {
-    background-color: #bcdefa;
+    background-color: hsl(214, 100%, 81%);
   }
 
   .xl\:bg-blue-lightest {
-    background-color: #eff8ff;
+    background-color: hsl(214, 100%, 95%);
   }
 
   .xl\:bg-indigo-darkest {
@@ -23434,7 +23432,7 @@ table {
   }
 
   .xl\:hover\:bg-orange:hover {
-    background-color: #f6993f;
+    background-color: hsl(22, 100%, 74%);
   }
 
   .xl\:hover\:bg-orange-light:hover {
@@ -23534,31 +23532,31 @@ table {
   }
 
   .xl\:hover\:bg-blue-darkest:hover {
-    background-color: #12283a;
+    background-color: hsl(214, 100%, 13%);
   }
 
   .xl\:hover\:bg-blue-darker:hover {
-    background-color: #1c3d5a;
+    background-color: hsl(214, 100%, 20%);
   }
 
   .xl\:hover\:bg-blue-dark:hover {
-    background-color: #2779bd;
+    background-color: hsl(214, 85%, 50%);
   }
 
   .xl\:hover\:bg-blue:hover {
-    background-color: #3490dc;
+    background-color: hsl(214, 85%, 64%);
   }
 
   .xl\:hover\:bg-blue-light:hover {
-    background-color: #6cb2eb;
+    background-color: hsl(214, 65%, 74%);
   }
 
   .xl\:hover\:bg-blue-lighter:hover {
-    background-color: #bcdefa;
+    background-color: hsl(214, 100%, 81%);
   }
 
   .xl\:hover\:bg-blue-lightest:hover {
-    background-color: #eff8ff;
+    background-color: hsl(214, 100%, 95%);
   }
 
   .xl\:hover\:bg-indigo-darkest:hover {
@@ -23726,7 +23724,7 @@ table {
   }
 
   .xl\:focus\:bg-orange:focus {
-    background-color: #f6993f;
+    background-color: hsl(22, 100%, 74%);
   }
 
   .xl\:focus\:bg-orange-light:focus {
@@ -23826,31 +23824,31 @@ table {
   }
 
   .xl\:focus\:bg-blue-darkest:focus {
-    background-color: #12283a;
+    background-color: hsl(214, 100%, 13%);
   }
 
   .xl\:focus\:bg-blue-darker:focus {
-    background-color: #1c3d5a;
+    background-color: hsl(214, 100%, 20%);
   }
 
   .xl\:focus\:bg-blue-dark:focus {
-    background-color: #2779bd;
+    background-color: hsl(214, 85%, 50%);
   }
 
   .xl\:focus\:bg-blue:focus {
-    background-color: #3490dc;
+    background-color: hsl(214, 85%, 64%);
   }
 
   .xl\:focus\:bg-blue-light:focus {
-    background-color: #6cb2eb;
+    background-color: hsl(214, 65%, 74%);
   }
 
   .xl\:focus\:bg-blue-lighter:focus {
-    background-color: #bcdefa;
+    background-color: hsl(214, 100%, 81%);
   }
 
   .xl\:focus\:bg-blue-lightest:focus {
-    background-color: #eff8ff;
+    background-color: hsl(214, 100%, 95%);
   }
 
   .xl\:focus\:bg-indigo-darkest:focus {
@@ -24082,7 +24080,7 @@ table {
   }
 
   .xl\:border-orange {
-    border-color: #f6993f;
+    border-color: hsl(22, 100%, 74%);
   }
 
   .xl\:border-orange-light {
@@ -24182,31 +24180,31 @@ table {
   }
 
   .xl\:border-blue-darkest {
-    border-color: #12283a;
+    border-color: hsl(214, 100%, 13%);
   }
 
   .xl\:border-blue-darker {
-    border-color: #1c3d5a;
+    border-color: hsl(214, 100%, 20%);
   }
 
   .xl\:border-blue-dark {
-    border-color: #2779bd;
+    border-color: hsl(214, 85%, 50%);
   }
 
   .xl\:border-blue {
-    border-color: #3490dc;
+    border-color: hsl(214, 85%, 64%);
   }
 
   .xl\:border-blue-light {
-    border-color: #6cb2eb;
+    border-color: hsl(214, 65%, 74%);
   }
 
   .xl\:border-blue-lighter {
-    border-color: #bcdefa;
+    border-color: hsl(214, 100%, 81%);
   }
 
   .xl\:border-blue-lightest {
-    border-color: #eff8ff;
+    border-color: hsl(214, 100%, 95%);
   }
 
   .xl\:border-indigo-darkest {
@@ -24374,7 +24372,7 @@ table {
   }
 
   .xl\:hover\:border-orange:hover {
-    border-color: #f6993f;
+    border-color: hsl(22, 100%, 74%);
   }
 
   .xl\:hover\:border-orange-light:hover {
@@ -24474,31 +24472,31 @@ table {
   }
 
   .xl\:hover\:border-blue-darkest:hover {
-    border-color: #12283a;
+    border-color: hsl(214, 100%, 13%);
   }
 
   .xl\:hover\:border-blue-darker:hover {
-    border-color: #1c3d5a;
+    border-color: hsl(214, 100%, 20%);
   }
 
   .xl\:hover\:border-blue-dark:hover {
-    border-color: #2779bd;
+    border-color: hsl(214, 85%, 50%);
   }
 
   .xl\:hover\:border-blue:hover {
-    border-color: #3490dc;
+    border-color: hsl(214, 85%, 64%);
   }
 
   .xl\:hover\:border-blue-light:hover {
-    border-color: #6cb2eb;
+    border-color: hsl(214, 65%, 74%);
   }
 
   .xl\:hover\:border-blue-lighter:hover {
-    border-color: #bcdefa;
+    border-color: hsl(214, 100%, 81%);
   }
 
   .xl\:hover\:border-blue-lightest:hover {
-    border-color: #eff8ff;
+    border-color: hsl(214, 100%, 95%);
   }
 
   .xl\:hover\:border-indigo-darkest:hover {
@@ -24666,7 +24664,7 @@ table {
   }
 
   .xl\:focus\:border-orange:focus {
-    border-color: #f6993f;
+    border-color: hsl(22, 100%, 74%);
   }
 
   .xl\:focus\:border-orange-light:focus {
@@ -24766,31 +24764,31 @@ table {
   }
 
   .xl\:focus\:border-blue-darkest:focus {
-    border-color: #12283a;
+    border-color: hsl(214, 100%, 13%);
   }
 
   .xl\:focus\:border-blue-darker:focus {
-    border-color: #1c3d5a;
+    border-color: hsl(214, 100%, 20%);
   }
 
   .xl\:focus\:border-blue-dark:focus {
-    border-color: #2779bd;
+    border-color: hsl(214, 85%, 50%);
   }
 
   .xl\:focus\:border-blue:focus {
-    border-color: #3490dc;
+    border-color: hsl(214, 85%, 64%);
   }
 
   .xl\:focus\:border-blue-light:focus {
-    border-color: #6cb2eb;
+    border-color: hsl(214, 65%, 74%);
   }
 
   .xl\:focus\:border-blue-lighter:focus {
-    border-color: #bcdefa;
+    border-color: hsl(214, 100%, 81%);
   }
 
   .xl\:focus\:border-blue-lightest:focus {
-    border-color: #eff8ff;
+    border-color: hsl(214, 100%, 95%);
   }
 
   .xl\:focus\:border-indigo-darkest:focus {
@@ -27430,7 +27428,7 @@ table {
   }
 
   .xl\:text-orange {
-    color: #f6993f;
+    color: hsl(22, 100%, 74%);
   }
 
   .xl\:text-orange-light {
@@ -27530,31 +27528,31 @@ table {
   }
 
   .xl\:text-blue-darkest {
-    color: #12283a;
+    color: hsl(214, 100%, 13%);
   }
 
   .xl\:text-blue-darker {
-    color: #1c3d5a;
+    color: hsl(214, 100%, 20%);
   }
 
   .xl\:text-blue-dark {
-    color: #2779bd;
+    color: hsl(214, 85%, 50%);
   }
 
   .xl\:text-blue {
-    color: #3490dc;
+    color: hsl(214, 85%, 64%);
   }
 
   .xl\:text-blue-light {
-    color: #6cb2eb;
+    color: hsl(214, 65%, 74%);
   }
 
   .xl\:text-blue-lighter {
-    color: #bcdefa;
+    color: hsl(214, 100%, 81%);
   }
 
   .xl\:text-blue-lightest {
-    color: #eff8ff;
+    color: hsl(214, 100%, 95%);
   }
 
   .xl\:text-indigo-darkest {
@@ -27722,7 +27720,7 @@ table {
   }
 
   .xl\:hover\:text-orange:hover {
-    color: #f6993f;
+    color: hsl(22, 100%, 74%);
   }
 
   .xl\:hover\:text-orange-light:hover {
@@ -27822,31 +27820,31 @@ table {
   }
 
   .xl\:hover\:text-blue-darkest:hover {
-    color: #12283a;
+    color: hsl(214, 100%, 13%);
   }
 
   .xl\:hover\:text-blue-darker:hover {
-    color: #1c3d5a;
+    color: hsl(214, 100%, 20%);
   }
 
   .xl\:hover\:text-blue-dark:hover {
-    color: #2779bd;
+    color: hsl(214, 85%, 50%);
   }
 
   .xl\:hover\:text-blue:hover {
-    color: #3490dc;
+    color: hsl(214, 85%, 64%);
   }
 
   .xl\:hover\:text-blue-light:hover {
-    color: #6cb2eb;
+    color: hsl(214, 65%, 74%);
   }
 
   .xl\:hover\:text-blue-lighter:hover {
-    color: #bcdefa;
+    color: hsl(214, 100%, 81%);
   }
 
   .xl\:hover\:text-blue-lightest:hover {
-    color: #eff8ff;
+    color: hsl(214, 100%, 95%);
   }
 
   .xl\:hover\:text-indigo-darkest:hover {
@@ -28014,7 +28012,7 @@ table {
   }
 
   .xl\:focus\:text-orange:focus {
-    color: #f6993f;
+    color: hsl(22, 100%, 74%);
   }
 
   .xl\:focus\:text-orange-light:focus {
@@ -28114,31 +28112,31 @@ table {
   }
 
   .xl\:focus\:text-blue-darkest:focus {
-    color: #12283a;
+    color: hsl(214, 100%, 13%);
   }
 
   .xl\:focus\:text-blue-darker:focus {
-    color: #1c3d5a;
+    color: hsl(214, 100%, 20%);
   }
 
   .xl\:focus\:text-blue-dark:focus {
-    color: #2779bd;
+    color: hsl(214, 85%, 50%);
   }
 
   .xl\:focus\:text-blue:focus {
-    color: #3490dc;
+    color: hsl(214, 85%, 64%);
   }
 
   .xl\:focus\:text-blue-light:focus {
-    color: #6cb2eb;
+    color: hsl(214, 65%, 74%);
   }
 
   .xl\:focus\:text-blue-lighter:focus {
-    color: #bcdefa;
+    color: hsl(214, 100%, 81%);
   }
 
   .xl\:focus\:text-blue-lightest:focus {
-    color: #eff8ff;
+    color: hsl(214, 100%, 95%);
   }
 
   .xl\:focus\:text-indigo-darkest:focus {
