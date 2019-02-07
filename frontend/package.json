@@ -15,7 +15,9 @@
     "start": "npm run watch:css & react-scripts start",
     "build": "npm run build:css && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "syncBucketOne": "aws s3 sync build/ s3://boshwedding.com --profile default",
+    "deploy": "npm run build && npm run syncBucketOne"
   },
   "eslintConfig": {
     "extends": "react-app"
