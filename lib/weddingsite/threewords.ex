@@ -41,8 +41,14 @@ Generates the three words to be used as invite codes for guests.
     [
       "Bruno",
       "Dunk",
-      "Duffy",
-      "Murray"
+      "Zamora",
+      "Murray",
+      "Cullip",
+      "March",
+      "Knight",
+      "Hart",
+      "Mayo",
+      "Gross"
     ]
   end
 
@@ -51,7 +57,13 @@ Generates the three words to be used as invite codes for guests.
       "Cookie",
       "Cake",
       "Flapjack",
-      "Cheesecake"
+      "Cheesecake",
+      "Brownie",
+      "Muffin",
+      "Biscuit",
+      "Cupcake",
+      "Pastry",
+      "Danish"
     ]
   end
 
@@ -60,7 +72,13 @@ Generates the three words to be used as invite codes for guests.
       "Madrid",
       "Paris",
       "Vegas",
-      "Toronto"
+      "Toronto",
+      "Portland",
+      "Munich",
+      "Berlin",
+      "Verona",
+      "Seattle",
+      "Porto"
     ]
   end
 end
