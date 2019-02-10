@@ -26,7 +26,7 @@ const Home = () => {
               target="_blank"
               className="no-underline text-blue-darker"
             >
-              <p className="border-b-4 border-blue-light">Cissbury Barns</p>
+              <p className="border-b-4 border-orange">Cissbury Barns</p>
             </a>
             <p>,&nbsp;Nepcote</p>
           </div>
@@ -42,19 +42,19 @@ const Home = () => {
           <h1 className="w-64 md:w-128 font-bold text-3xl text-white">
             Questions?
           </h1>
-          <div className="bg-orange h-1 w-24 my-4" />
+          <div className="bg-blue-dark h-1 w-24 my-4" />
           <div className="w-100 mt-6 flex flex-row text-white text-xl md:text-2xl">
             <Info />
             <p>More info over at&nbsp;</p>
             <Link to="/faq" className="no-underline text-white">
-              <p className="border-b-4 border-blue-darkest">FAQs</p>
+              <p className="border-b-4 border-orange">FAQs</p>
             </Link>
           </div>
           <div className="w-100 mt-6 flex flex-row text-white text-xl md:text-2xl">
             <Contact/>
             <p>Visit the&nbsp;</p>
             <Link to="/rsvp" className="no-underline text-white">
-              <p className="border-b-4 border-blue-darkest">RSVP page</p>
+              <p className="border-b-4 border-orange">RSVP page</p>
             </Link>
           </div>
         </div>

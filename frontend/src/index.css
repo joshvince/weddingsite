@@ -6214,6 +6214,10 @@ table {
   */
 @import url('https://rsms.me/inter/inter-ui.css');
 
+a {
+  text-decoration: none;
+}
+
 @media (min-width: 576px) {
   .sm\:list-reset {
     list-style: none;

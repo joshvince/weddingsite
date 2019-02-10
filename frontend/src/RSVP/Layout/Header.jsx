@@ -15,7 +15,7 @@ const Header = ({ dayGuests, guests }) => {
         <h1 className="text-4xl text-blue-darker font-extrabold">
           {guestNames}
         </h1>
-        <div className="bg-orange h-1 w-32 mt-4" />
+        <div className="bg-blue h-1 w-32 mt-4" />
         <p className="text-xl py-6">
           We'd love for you to join us to celebrate our wedding
         </p>
@@ -31,16 +31,18 @@ const Header = ({ dayGuests, guests }) => {
             className="no-underline"
             target="_blank"
             rel="noopener noreferrer"
+            className="no-underline text-blue-darker"
           >
             <InfoPoint
               icon={<Pin />}
               title="Cissbury Barns, Nepcote"
               subtitle=""
             />
+            <div className="border-b-4 border-orange" />
           </a>
         </div>
-        <h2 className="text-2xl font-extrabold text-blue-darker mt-8 mb-4">
-          Let us know if you can make it
+        <h2 className="text-2xl font-extrabold text-blue-darker mt-16 mb-4">
+          Let us know if everyone can make it
         </h2>
       </div>
     </div>

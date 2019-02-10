@@ -61,3 +61,7 @@
   * @import "utilities/skew-transforms";
   */
   @import url('https://rsms.me/inter/inter-ui.css');
+
+  a {
+    text-decoration: none;
+  }
