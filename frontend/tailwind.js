@@ -100,7 +100,7 @@ let colors = {
   'blue-darker': 'hsl(214, 100%, 20%)',
   'blue-dark': 'hsl(214, 85%, 50%)',
   'blue': 'hsl(214, 85%, 64%)',
-  'blue-light': 'hsl(214, 65%, 74%)',
+  'blue-light': 'hsl(214, 70%, 74%)',
   'blue-lighter': 'hsl(214, 100%, 81%)',
   'blue-lightest': 'hsl(214, 100%, 95%)',
 

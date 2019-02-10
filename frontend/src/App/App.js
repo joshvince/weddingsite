@@ -10,12 +10,12 @@ import CodeSelector from "../RSVP/CodeSelector/CodeSelector";
 class App extends Component {
   render() {
     return (
-      <div className="font-sans bg-grey-lighter text-blue-darkest w-screen min-h-screen">
+      <div className="font-sans bg-grey-lighter text-blue-darker w-screen min-h-screen">
         <Router>
           <div>
-            <Route path="/" exact component={Placeholder} />
-            <Route path="/test" component={Nav} />
-            <Route path="/test" exact component={Home} />
+            {/* <Route path="/" exact component={Placeholder} /> */}
+            <Route path="/" component={Nav} />
+            <Route path="/" exact component={Home} />
             <Route path="/rsvp" exact component={CodeSelector} />
             <Route path="/rsvp/:code" component={RSVPContainer} />
           </div>

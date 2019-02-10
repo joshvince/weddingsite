@@ -3,10 +3,11 @@ import React from "react";
 const Selector = ({inputHandler, submitHandler, defaultCode}) => {
   return (
     <div>
-      <h1 className="font-extrabold text-blue-darker">RSVP</h1>
+      <h1 className="font-extrabold text-blue">RSVP</h1>
+      <p className="text-blue-darker my-4">Enter the code we sent you via email</p>
       <input
         className="bg-grey-lighter appearance-none border-2 border-grey-lighter rounded
-                       w-full mt-8 mb-6 py-2 px-4 text-grey-darker text-xl md:text-2xl leading-tight
+                       w-full mb-6 py-2 px-4 text-grey-darker text-lg md:text-2xl leading-tight
                        focus:outline-none focus:bg-white focus:border-blue"
         id="inline-full-name"
         type="text"

@@ -23,10 +23,10 @@ defmodule WeddingsiteWeb.Router do
     pipe_through :browser
 
 
-    # resources "/invites", InviteController
-    # get "/invites/:id/guests", InviteController, :guests
-    # post "/invites/:id/update_guests", InviteController, :update_guests
-    # resources "/people", PersonController
+    resources "/invites", InviteController
+    get "/invites/:id/guests", InviteController, :guests
+    post "/invites/:id/update_guests", InviteController, :update_guests
+    resources "/people", PersonController
   end
 
   # Our API serves the frontend client app
@@ -35,10 +35,10 @@ defmodule WeddingsiteWeb.Router do
 
     get "/showmethemoneysean", RSVPController, :check_code
 
-    # get "/codes/get", CodeController, :get_new_code
-    # get "/rsvp_check", RSVPController, :check_code
-    # get "/rsvp/:code", RSVPController, :show_json
-    # post "/rsvp/:code", RSVPController, :rsvp_reply
+    get "/codes/get", CodeController, :get_new_code
+    get "/rsvp_check", RSVPController, :check_code
+    get "/rsvp/:code", RSVPController, :show_json
+    post "/rsvp/:code", RSVPController, :rsvp_reply
 
   end
 end

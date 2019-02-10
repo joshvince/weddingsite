@@ -4,8 +4,8 @@ import TimelineItem from "./TimelineItem";
 const Timeline = () => {
   return (
     <div className="flex flex-col mt-6">
-      <div><h2 className="font-extrabold text-3xl mb-2">On the day</h2></div>
-      <div className="bg-orange h-1 w-32 my-4" />
+      <div><h2 className="text-3xl mb-2 text-blue-darker font-extrabold">On the day</h2></div>
+      <div className="bg-blue h-1 w-24 my-4" />
       <TimelineItem
         time="12:00"
         header="Venue opens"
