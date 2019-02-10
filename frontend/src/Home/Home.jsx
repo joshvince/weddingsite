@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="w-screen">
       <div className="w-screen min-h-screen pt-16 container px-2 mx-auto flex flex-col items-center justify-center">
-        <img src={Flowers} className="my-4 md:my-12 w-screen md:w-4/5" />
+        <img src={Flowers} className="my-4 md:my-12 w-screen md:w-4/5" alt=""/>
         <div className="flex flex-col justify-center text-center mt-4 mb-12">
           <h1 className="font-extrabold text-blue text-3xl md:text-5xl mb-8">
             Bethan & Josh are getting married
@@ -24,6 +24,7 @@ const Home = () => {
             <a
               href="https://goo.gl/maps/t6Bqu7BfXrM2"
               target="_blank"
+              rel="noopener noreferrer"
               className="no-underline text-blue-darker"
             >
               <p className="border-b-4 border-orange">Cissbury Barns</p>

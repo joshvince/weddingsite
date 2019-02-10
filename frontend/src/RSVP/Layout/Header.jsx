@@ -28,10 +28,9 @@ const Header = ({ dayGuests, guests }) => {
           <InfoPoint icon={<Clock />} title={inviteText} subtitle="" />
           <a
             href="https://goo.gl/maps/t6Bqu7BfXrM2"
-            className="no-underline"
+            className="no-underlinetext-blue-darker"
             target="_blank"
             rel="noopener noreferrer"
-            className="no-underline text-blue-darker"
           >
             <InfoPoint
               icon={<Pin />}
