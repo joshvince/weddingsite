@@ -70,7 +70,7 @@ class CodeSelector extends Component {
     if (triggerRedirect) return <Redirect to={{ pathname: `/rsvp/${code}` }} />;
 
     return (
-      <div className="h-screen flex flex-col justify-center items-center">
+      <div className="h-screen flex flex-col justify-center items-center pt-16">
         <div className="bg-white max-w-md md:w-128 flex flex-col rounded shadow-lg m-4 p-10 text-center">
           {content}
         </div>

@@ -12,7 +12,7 @@ const RSVP = ({
 }) => {
   let buttonState = everybodyRSVP ? null : "opacity-50 cursor-not-allowed";
   return (
-    <div className="w-screen">
+    <div className="w-screen pt-16">
       <Header dayGuests={invite.day_guests} guests={invite.guests} />
       <div className="container mx-auto flex flex-col items-center justify-center">
         <div className="">

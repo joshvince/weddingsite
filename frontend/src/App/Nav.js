@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <div className="w-screen h-16 bg-blue-light shadow p-4 text-white flex items-center justify-around">
+    <div className="fixed w-screen h-16 bg-blue-light shadow p-4 text-white flex items-center justify-around">
       <Link to="/" className="no-underline">
         <p className="w-24 font-bold md:text-xl text-white">22619</p>
       </Link>
