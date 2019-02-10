@@ -789,7 +789,7 @@ table {
 }
 
 .bg-blue-light {
-  background-color: hsl(214, 65%, 74%);
+  background-color: hsl(214, 70%, 74%);
 }
 
 .bg-blue-lighter {
@@ -1081,7 +1081,7 @@ table {
 }
 
 .hover\:bg-blue-light:hover {
-  background-color: hsl(214, 65%, 74%);
+  background-color: hsl(214, 70%, 74%);
 }
 
 .hover\:bg-blue-lighter:hover {
@@ -1373,7 +1373,7 @@ table {
 }
 
 .focus\:bg-blue-light:focus {
-  background-color: hsl(214, 65%, 74%);
+  background-color: hsl(214, 70%, 74%);
 }
 
 .focus\:bg-blue-lighter:focus {
@@ -1737,7 +1737,7 @@ table {
 }
 
 .border-blue-light {
-  border-color: hsl(214, 65%, 74%);
+  border-color: hsl(214, 70%, 74%);
 }
 
 .border-blue-lighter {
@@ -2029,7 +2029,7 @@ table {
 }
 
 .hover\:border-blue-light:hover {
-  border-color: hsl(214, 65%, 74%);
+  border-color: hsl(214, 70%, 74%);
 }
 
 .hover\:border-blue-lighter:hover {
@@ -2321,7 +2321,7 @@ table {
 }
 
 .focus\:border-blue-light:focus {
-  border-color: hsl(214, 65%, 74%);
+  border-color: hsl(214, 70%, 74%);
 }
 
 .focus\:border-blue-lighter:focus {
@@ -5101,7 +5101,7 @@ table {
 }
 
 .text-blue-light {
-  color: hsl(214, 65%, 74%);
+  color: hsl(214, 70%, 74%);
 }
 
 .text-blue-lighter {
@@ -5393,7 +5393,7 @@ table {
 }
 
 .hover\:text-blue-light:hover {
-  color: hsl(214, 65%, 74%);
+  color: hsl(214, 70%, 74%);
 }
 
 .hover\:text-blue-lighter:hover {
@@ -5685,7 +5685,7 @@ table {
 }
 
 .focus\:text-blue-light:focus {
-  color: hsl(214, 65%, 74%);
+  color: hsl(214, 70%, 74%);
 }
 
 .focus\:text-blue-lighter:focus {
@@ -6435,7 +6435,7 @@ table {
   }
 
   .sm\:bg-blue-light {
-    background-color: hsl(214, 65%, 74%);
+    background-color: hsl(214, 70%, 74%);
   }
 
   .sm\:bg-blue-lighter {
@@ -6727,7 +6727,7 @@ table {
   }
 
   .sm\:hover\:bg-blue-light:hover {
-    background-color: hsl(214, 65%, 74%);
+    background-color: hsl(214, 70%, 74%);
   }
 
   .sm\:hover\:bg-blue-lighter:hover {
@@ -7019,7 +7019,7 @@ table {
   }
 
   .sm\:focus\:bg-blue-light:focus {
-    background-color: hsl(214, 65%, 74%);
+    background-color: hsl(214, 70%, 74%);
   }
 
   .sm\:focus\:bg-blue-lighter:focus {
@@ -7375,7 +7375,7 @@ table {
   }
 
   .sm\:border-blue-light {
-    border-color: hsl(214, 65%, 74%);
+    border-color: hsl(214, 70%, 74%);
   }
 
   .sm\:border-blue-lighter {
@@ -7667,7 +7667,7 @@ table {
   }
 
   .sm\:hover\:border-blue-light:hover {
-    border-color: hsl(214, 65%, 74%);
+    border-color: hsl(214, 70%, 74%);
   }
 
   .sm\:hover\:border-blue-lighter:hover {
@@ -7959,7 +7959,7 @@ table {
   }
 
   .sm\:focus\:border-blue-light:focus {
-    border-color: hsl(214, 65%, 74%);
+    border-color: hsl(214, 70%, 74%);
   }
 
   .sm\:focus\:border-blue-lighter:focus {
@@ -10723,7 +10723,7 @@ table {
   }
 
   .sm\:text-blue-light {
-    color: hsl(214, 65%, 74%);
+    color: hsl(214, 70%, 74%);
   }
 
   .sm\:text-blue-lighter {
@@ -11015,7 +11015,7 @@ table {
   }
 
   .sm\:hover\:text-blue-light:hover {
-    color: hsl(214, 65%, 74%);
+    color: hsl(214, 70%, 74%);
   }
 
   .sm\:hover\:text-blue-lighter:hover {
@@ -11307,7 +11307,7 @@ table {
   }
 
   .sm\:focus\:text-blue-light:focus {
-    color: hsl(214, 65%, 74%);
+    color: hsl(214, 70%, 74%);
   }
 
   .sm\:focus\:text-blue-lighter:focus {
@@ -12042,7 +12042,7 @@ table {
   }
 
   .md\:bg-blue-light {
-    background-color: hsl(214, 65%, 74%);
+    background-color: hsl(214, 70%, 74%);
   }
 
   .md\:bg-blue-lighter {
@@ -12334,7 +12334,7 @@ table {
   }
 
   .md\:hover\:bg-blue-light:hover {
-    background-color: hsl(214, 65%, 74%);
+    background-color: hsl(214, 70%, 74%);
   }
 
   .md\:hover\:bg-blue-lighter:hover {
@@ -12626,7 +12626,7 @@ table {
   }
 
   .md\:focus\:bg-blue-light:focus {
-    background-color: hsl(214, 65%, 74%);
+    background-color: hsl(214, 70%, 74%);
   }
 
   .md\:focus\:bg-blue-lighter:focus {
@@ -12982,7 +12982,7 @@ table {
   }
 
   .md\:border-blue-light {
-    border-color: hsl(214, 65%, 74%);
+    border-color: hsl(214, 70%, 74%);
   }
 
   .md\:border-blue-lighter {
@@ -13274,7 +13274,7 @@ table {
   }
 
   .md\:hover\:border-blue-light:hover {
-    border-color: hsl(214, 65%, 74%);
+    border-color: hsl(214, 70%, 74%);
   }
 
   .md\:hover\:border-blue-lighter:hover {
@@ -13566,7 +13566,7 @@ table {
   }
 
   .md\:focus\:border-blue-light:focus {
-    border-color: hsl(214, 65%, 74%);
+    border-color: hsl(214, 70%, 74%);
   }
 
   .md\:focus\:border-blue-lighter:focus {
@@ -16330,7 +16330,7 @@ table {
   }
 
   .md\:text-blue-light {
-    color: hsl(214, 65%, 74%);
+    color: hsl(214, 70%, 74%);
   }
 
   .md\:text-blue-lighter {
@@ -16622,7 +16622,7 @@ table {
   }
 
   .md\:hover\:text-blue-light:hover {
-    color: hsl(214, 65%, 74%);
+    color: hsl(214, 70%, 74%);
   }
 
   .md\:hover\:text-blue-lighter:hover {
@@ -16914,7 +16914,7 @@ table {
   }
 
   .md\:focus\:text-blue-light:focus {
-    color: hsl(214, 65%, 74%);
+    color: hsl(214, 70%, 74%);
   }
 
   .md\:focus\:text-blue-lighter:focus {
@@ -17649,7 +17649,7 @@ table {
   }
 
   .lg\:bg-blue-light {
-    background-color: hsl(214, 65%, 74%);
+    background-color: hsl(214, 70%, 74%);
   }
 
   .lg\:bg-blue-lighter {
@@ -17941,7 +17941,7 @@ table {
   }
 
   .lg\:hover\:bg-blue-light:hover {
-    background-color: hsl(214, 65%, 74%);
+    background-color: hsl(214, 70%, 74%);
   }
 
   .lg\:hover\:bg-blue-lighter:hover {
@@ -18233,7 +18233,7 @@ table {
   }
 
   .lg\:focus\:bg-blue-light:focus {
-    background-color: hsl(214, 65%, 74%);
+    background-color: hsl(214, 70%, 74%);
   }
 
   .lg\:focus\:bg-blue-lighter:focus {
@@ -18589,7 +18589,7 @@ table {
   }
 
   .lg\:border-blue-light {
-    border-color: hsl(214, 65%, 74%);
+    border-color: hsl(214, 70%, 74%);
   }
 
   .lg\:border-blue-lighter {
@@ -18881,7 +18881,7 @@ table {
   }
 
   .lg\:hover\:border-blue-light:hover {
-    border-color: hsl(214, 65%, 74%);
+    border-color: hsl(214, 70%, 74%);
   }
 
   .lg\:hover\:border-blue-lighter:hover {
@@ -19173,7 +19173,7 @@ table {
   }
 
   .lg\:focus\:border-blue-light:focus {
-    border-color: hsl(214, 65%, 74%);
+    border-color: hsl(214, 70%, 74%);
   }
 
   .lg\:focus\:border-blue-lighter:focus {
@@ -21937,7 +21937,7 @@ table {
   }
 
   .lg\:text-blue-light {
-    color: hsl(214, 65%, 74%);
+    color: hsl(214, 70%, 74%);
   }
 
   .lg\:text-blue-lighter {
@@ -22229,7 +22229,7 @@ table {
   }
 
   .lg\:hover\:text-blue-light:hover {
-    color: hsl(214, 65%, 74%);
+    color: hsl(214, 70%, 74%);
   }
 
   .lg\:hover\:text-blue-lighter:hover {
@@ -22521,7 +22521,7 @@ table {
   }
 
   .lg\:focus\:text-blue-light:focus {
-    color: hsl(214, 65%, 74%);
+    color: hsl(214, 70%, 74%);
   }
 
   .lg\:focus\:text-blue-lighter:focus {
@@ -23256,7 +23256,7 @@ table {
   }
 
   .xl\:bg-blue-light {
-    background-color: hsl(214, 65%, 74%);
+    background-color: hsl(214, 70%, 74%);
   }
 
   .xl\:bg-blue-lighter {
@@ -23548,7 +23548,7 @@ table {
   }
 
   .xl\:hover\:bg-blue-light:hover {
-    background-color: hsl(214, 65%, 74%);
+    background-color: hsl(214, 70%, 74%);
   }
 
   .xl\:hover\:bg-blue-lighter:hover {
@@ -23840,7 +23840,7 @@ table {
   }
 
   .xl\:focus\:bg-blue-light:focus {
-    background-color: hsl(214, 65%, 74%);
+    background-color: hsl(214, 70%, 74%);
   }
 
   .xl\:focus\:bg-blue-lighter:focus {
@@ -24196,7 +24196,7 @@ table {
   }
 
   .xl\:border-blue-light {
-    border-color: hsl(214, 65%, 74%);
+    border-color: hsl(214, 70%, 74%);
   }
 
   .xl\:border-blue-lighter {
@@ -24488,7 +24488,7 @@ table {
   }
 
   .xl\:hover\:border-blue-light:hover {
-    border-color: hsl(214, 65%, 74%);
+    border-color: hsl(214, 70%, 74%);
   }
 
   .xl\:hover\:border-blue-lighter:hover {
@@ -24780,7 +24780,7 @@ table {
   }
 
   .xl\:focus\:border-blue-light:focus {
-    border-color: hsl(214, 65%, 74%);
+    border-color: hsl(214, 70%, 74%);
   }
 
   .xl\:focus\:border-blue-lighter:focus {
@@ -27544,7 +27544,7 @@ table {
   }
 
   .xl\:text-blue-light {
-    color: hsl(214, 65%, 74%);
+    color: hsl(214, 70%, 74%);
   }
 
   .xl\:text-blue-lighter {
@@ -27836,7 +27836,7 @@ table {
   }
 
   .xl\:hover\:text-blue-light:hover {
-    color: hsl(214, 65%, 74%);
+    color: hsl(214, 70%, 74%);
   }
 
   .xl\:hover\:text-blue-lighter:hover {
@@ -28128,7 +28128,7 @@ table {
   }
 
   .xl\:focus\:text-blue-light:focus {
-    color: hsl(214, 65%, 74%);
+    color: hsl(214, 70%, 74%);
   }
 
   .xl\:focus\:text-blue-lighter:focus {
