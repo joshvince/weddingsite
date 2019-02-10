@@ -7,7 +7,7 @@ const TimelineItem = ({ time, header, subheader }) => {
                     md:w-128 md:py-6 md:px-6"
     >
       <div className="flex flex-col md:flex-row">
-        <p className="text-blue font-extrabold my-2 md:my-auto mr-6 md:text-lg">{time}</p>
+        <p className="text-orange font-extrabold my-2 md:my-auto mr-6 md:text-lg">{time}</p>
         <div className="flex flex-col">
           <p className="font-extrabold text-lg md:text-2xl text-blue-darker">{header}</p>
           <p className="text-blue-light mt-2">{subheader}</p>
