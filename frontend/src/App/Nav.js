@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <div className="w-screen h-16 bg-blue shadow p-4 text-white flex items-center justify-between">
+    <div className="w-screen h-16 bg-blue shadow p-4 text-white flex items-center justify-around">
       <Link to="/" className="no-underline">
-        <p className="w-24 font-extrabold text-xl text-white">BOSH</p>
+        <p className="w-24 font-bold text-xl text-white">22619</p>
+      </Link>
+      <Link to="/where" className="no-underline">
+        <p className="w-24 font-bold text-xl text-white">TRAVEL</p>
       </Link>
       <Link to="/rsvp">
         <button className="w-24 bg-orange hover:bg-orange text-white text-lg font-bold py-4 px-4 rounded shadow">
