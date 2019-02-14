@@ -40,9 +40,10 @@ class CodeSelector extends Component {
   };
 
   handleSubmit = e => {
+    const API_URL = 'https://protected-scrubland-86840.herokuapp.com'
     e.preventDefault();
     let inviteCode = this.state.code.toLowerCase();
-    fetch(`/api/rsvp_check?code=${inviteCode}`).then(res => {
+    fetch(`${API_URL}/api/rsvp_check?code=${inviteCode}`).then(res => {
       if (res.status === 200) {
         Storage.set(inviteCode);
         this.setState({ triggerRedirect: true });

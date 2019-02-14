@@ -20,8 +20,9 @@ class RSVPContainer extends Component {
   }
 
   componentDidMount = () => {
+    const API_URL = 'https://protected-scrubland-86840.herokuapp.com'
     let inviteCode = this.props.match.params.code;
-    fetch(`/api/rsvp/${inviteCode}`)
+    fetch(`${API_URL}/api/rsvp/${inviteCode}`)
       .then(res => res.json())
       .then(data => {
         this.setState({
@@ -51,6 +52,7 @@ class RSVPContainer extends Component {
   };
 
   submitRSVP = e => {
+    const API_URL = 'https://protected-scrubland-86840.herokuapp.com'
     e.preventDefault();
     let inviteCode = this.props.match.params.code;
     let data = {
@@ -58,7 +60,7 @@ class RSVPContainer extends Component {
       rsvps: this.state.rsvps
     };
 
-    fetch(`/api/rsvp/${inviteCode}`, {
+    fetch(`${API_URL}/api/rsvp/${inviteCode}`, {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
