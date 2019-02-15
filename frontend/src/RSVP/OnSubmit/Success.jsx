@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ReactComponent as Contact } from "./contact.svg";
 import { ReactComponent as Info } from "./info.svg";
@@ -9,6 +9,11 @@ import NotAttending from "./NotAttending";
 
 const Success = ({ anyoneComing }) => {
   let content = anyoneComing ? <Attending /> : <NotAttending />;
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  })
+
   return (
     <div className="min-h-screen max-w-lg mx-auto py-10 px-6">
       <div className="container mx-auto flex flex-col text-grey-dark mt-16">

@@ -18,6 +18,8 @@ class CodeSelector extends Component {
       triggerRedirect: false
     };
 
+    // this.API_URL = `/api/rsvp_check`;
+    this.API_URL = `https://protected-scrubland-86840.herokuapp.com/api/rsvp_check`;
     this.toggleError = this.toggleError.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -40,10 +42,9 @@ class CodeSelector extends Component {
   };
 
   handleSubmit = e => {
-    const API_URL = 'https://protected-scrubland-86840.herokuapp.com'
-    e.preventDefault();
     let inviteCode = this.state.code.toLowerCase();
-    fetch(`${API_URL}/api/rsvp_check?code=${inviteCode}`).then(res => {
+    e.preventDefault();
+    fetch(`${this.API_URL}?code=${inviteCode}`).then(res => {
       if (res.status === 200) {
         Storage.set(inviteCode);
         this.setState({ triggerRedirect: true });

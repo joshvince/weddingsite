@@ -5,6 +5,7 @@ import Success from "./OnSubmit/Success";
 class RSVPContainer extends Component {
   constructor(props) {
     super(props);
+    let inviteCode = props.match.params.code;
     this.state = {
       invite: null,
       loading: true,
@@ -13,16 +14,16 @@ class RSVPContainer extends Component {
       anyoneComing: false,
       formSubmitted: false
     };
-
+    this.inviteCode = inviteCode;
+    // this.API_URL = `/api/rsvp/${inviteCode}`
+    this.API_URL = `https://protected-scrubland-86840.herokuapp.com/api/rsvp/${inviteCode}`
     this.handleOneRSVP = this.handleOneRSVP.bind(this);
     this.submitRSVP = this.submitRSVP.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   componentDidMount = () => {
-    const API_URL = 'https://protected-scrubland-86840.herokuapp.com'
-    let inviteCode = this.props.match.params.code;
-    fetch(`${API_URL}/api/rsvp/${inviteCode}`)
+    fetch(this.API_URL)
       .then(res => res.json())
       .then(data => {
         this.setState({
@@ -52,15 +53,13 @@ class RSVPContainer extends Component {
   };
 
   submitRSVP = e => {
-    const API_URL = 'https://protected-scrubland-86840.herokuapp.com'
     e.preventDefault();
-    let inviteCode = this.props.match.params.code;
     let data = {
-      code: inviteCode,
+      code: this.inviteCode,
       rsvps: this.state.rsvps
     };
 
-    fetch(`${API_URL}/api/rsvp/${inviteCode}`, {
+    fetch(this.API_URL, {
       method: "POST",
       body: JSON.stringify(data),
       headers: {
