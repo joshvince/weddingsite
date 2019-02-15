@@ -29,7 +29,7 @@ const Home = () => {
             >
               <p className="border-b-4 border-orange">Cissbury Barns</p>
             </a>
-            <p>,&nbsp;Nepcote</p>
+            <p>,{" "}Findon</p>
           </div>
         </div>
       </div>
@@ -46,9 +46,9 @@ const Home = () => {
           <div className="bg-blue-dark h-1 w-24 my-4" />
           <div className="w-100 mt-6 flex flex-row text-white text-xl md:text-2xl">
             <Info />
-            <p>More info over at&nbsp;</p>
-            <Link to="/faq" className="no-underline text-white">
-              <p className="border-b-4 border-orange">FAQs</p>
+            <p>See&nbsp;</p>
+            <Link to="/info" className="no-underline text-white">
+              <p className="border-b-4 border-orange">more info</p>
             </Link>
           </div>
           <div className="w-100 mt-6 flex flex-row text-white text-xl md:text-2xl">
