@@ -10,7 +10,6 @@ defmodule WeddingsiteWeb.Router do
   end
 
   pipeline :api do
-    plug CORSPlug, origin: "http://boshwedding.com"
     plug :accepts, ["json"]
   end
 

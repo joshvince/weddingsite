@@ -42,5 +42,7 @@ defmodule WeddingsiteWeb.Endpoint do
     key: "_weddingsite_key",
     signing_salt: "+FvEk6Ts"
 
+  plug CORSPlug, origin: ["http://boshwedding.com"]
+
   plug WeddingsiteWeb.Router
 end
