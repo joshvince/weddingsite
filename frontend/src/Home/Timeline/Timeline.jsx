@@ -39,7 +39,7 @@ const Timeline = () => {
       <TimelineItem
         time="23:30"
         header="Last Orders"
-        subheader="Tell your taxi to arrive at midnight"
+        subheader="Tell your taxi to arrive at 23:45"
       />
     </div>
   );

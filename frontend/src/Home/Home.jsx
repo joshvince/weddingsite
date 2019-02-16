@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Timeline from "./Timeline/Timeline";
 import { Link } from "react-router-dom";
 import Flowers from "./flowers.svg";
@@ -6,12 +6,15 @@ import Flowers from "./flowers.svg";
 import { ReactComponent as Info } from "./info.svg";
 import { ReactComponent as Contact } from "./contact.svg";
 
-
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0,0)
+  })
+
   return (
     <div className="w-screen">
       <div className="w-screen min-h-screen pt-16 container px-2 mx-auto flex flex-col items-center justify-center">
-        <img src={Flowers} className="my-4 md:my-12 w-screen md:w-4/5" alt=""/>
+        <img src={Flowers} className="my-4 md:my-12 w-screen md:w-4/5" alt="" />
         <div className="flex flex-col justify-center text-center mt-4 mb-12">
           <h1 className="font-extrabold text-blue text-3xl md:text-5xl mb-8">
             Bethan & Josh are getting married
@@ -29,7 +32,7 @@ const Home = () => {
             >
               <p className="border-b-4 border-orange">Cissbury Barns</p>
             </a>
-            <p>,&nbsp;Nepcote</p>
+            <p>, Findon</p>
           </div>
         </div>
       </div>
@@ -46,16 +49,16 @@ const Home = () => {
           <div className="bg-blue-dark h-1 w-24 my-4" />
           <div className="w-100 mt-6 flex flex-row text-white text-xl md:text-2xl">
             <Info />
-            <p>More info over at&nbsp;</p>
-            <Link to="/faq" className="no-underline text-white">
-              <p className="border-b-4 border-orange">FAQs</p>
+            <p>See&nbsp;</p>
+            <Link to="/info" className="no-underline text-white">
+              <p className="border-b-4 border-orange-light">more info</p>
             </Link>
           </div>
           <div className="w-100 mt-6 flex flex-row text-white text-xl md:text-2xl">
-            <Contact/>
+            <Contact />
             <p>Visit the&nbsp;</p>
             <Link to="/rsvp" className="no-underline text-white">
-              <p className="border-b-4 border-orange">RSVP page</p>
+              <p className="border-b-4 border-orange-light">RSVP page</p>
             </Link>
           </div>
         </div>

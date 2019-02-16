@@ -67,8 +67,8 @@ let colors = {
   'orange-darkest': '#462a16',
   'orange-darker': '#613b1f',
   'orange-dark': '#de751f',
-  'orange': 'hsl(22, 100%, 74%)',
-  'orange-light': '#faad63',
+  'orange': 'hsl(22, 100%, 68%)',
+  'orange-light': 'hsl(22, 95%, 75%)',
   'orange-lighter': '#fcd9b6',
   'orange-lightest': '#fff5eb',
 
@@ -100,7 +100,7 @@ let colors = {
   'blue-darker': 'hsl(214, 100%, 20%)',
   'blue-dark': 'hsl(214, 85%, 50%)',
   'blue': 'hsl(214, 85%, 64%)',
-  'blue-light': 'hsl(214, 70%, 74%)',
+  'blue-light': 'hsl(214, 95%, 74%)',
   'blue-lighter': 'hsl(214, 100%, 81%)',
   'blue-lightest': 'hsl(214, 100%, 95%)',
 
