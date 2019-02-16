@@ -16,7 +16,7 @@ defmodule WeddingsiteWeb.Router do
   scope "/", WeddingsiteWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", DashboardController, :index
   end
 
   scope "/admin", WeddingsiteWeb do
