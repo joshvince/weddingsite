@@ -67,8 +67,8 @@ let colors = {
   'orange-darkest': '#462a16',
   'orange-darker': '#613b1f',
   'orange-dark': '#de751f',
-  'orange': 'hsl(22, 95%, 68%)',
-  'orange-light': '#faad63',
+  'orange': 'hsl(22, 100%, 68%)',
+  'orange-light': 'hsl(22, 95%, 75%)',
   'orange-lighter': '#fcd9b6',
   'orange-lightest': '#fff5eb',
 

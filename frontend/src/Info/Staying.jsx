@@ -11,10 +11,9 @@ const Staying = () => {
         travelling far it's likely you'll need a hotel or an AirBnB.
       </p>
       <div className="mb-6">
-        <h2 className="text-blue-dark font-extrabold">Worthing</h2>
-        <div className="bg-blue-light h-1 w-24 mt-2 mb-2" />
+        <h2 className="text-blue-dark font-extrabold mb-2">Worthing</h2>
         <p>
-          Worthing is the big town nearby, with a lot of hotels. It's about a 15
+          The biggest town nearby, Worthing has a lot of hotels. It's about a 15
           minute drive to the town center.<br/><br/>
         </p>
         <a
@@ -25,8 +24,7 @@ const Staying = () => {
         </a>
       </div>
       <div className="mb-6">
-        <h2 className="text-blue-dark font-extrabold">Findon</h2>
-        <div className="bg-blue-light h-1 w-10 mt-2 mb-2" />
+        <h2 className="text-blue-dark font-extrabold mb-2">Findon</h2>
         <p>
           Findon is the closest village to the venue but there are far fewer
           hotels and AirBnBs. <br />

@@ -51,14 +51,14 @@ const Home = () => {
             <Info />
             <p>See&nbsp;</p>
             <Link to="/info" className="no-underline text-white">
-              <p className="border-b-4 border-orange">more info</p>
+              <p className="border-b-4 border-orange-light">more info</p>
             </Link>
           </div>
           <div className="w-100 mt-6 flex flex-row text-white text-xl md:text-2xl">
             <Contact />
             <p>Visit the&nbsp;</p>
             <Link to="/rsvp" className="no-underline text-white">
-              <p className="border-b-4 border-orange">RSVP page</p>
+              <p className="border-b-4 border-orange-light">RSVP page</p>
             </Link>
           </div>
         </div>

@@ -14,8 +14,7 @@ const GettingThere = () => {
         </span>
       </p>
       <div className="mb-6">
-        <h2 className="text-blue-dark font-extrabold">Car</h2>
-        <div className="bg-blue-light h-1 w-6 mt-2 mb-4" />
+        <h2 className="text-blue-dark font-extrabold mb-2">Car</h2>
         <p className="mb-6">
           Driving is the easiest way to get to the Barns, and there's plenty of
           car parking. <br /></p>
@@ -54,8 +53,7 @@ const GettingThere = () => {
         </p>
       </div>
       <div className="mb-6">
-        <h2 className="text-blue-dark font-extrabold">Train</h2>
-        <div className="bg-blue-light h-1 w-10 mt-2 mb-2" />
+        <h2 className="text-blue-dark font-extrabold mb-2">Train</h2>
         <p>
           If you're getting the train, get a ticket to{" "}
           <span className="text-blue font-bold">Worthing Station</span> and get
@@ -67,8 +65,7 @@ const GettingThere = () => {
         </p>
       </div>
       <div>
-        <h2 className="text-blue-dark font-extrabold">Taxi</h2>
-        <div className="bg-blue-light h-1 w-8 mt-2 mb-2" />
+        <h2 className="text-blue-dark font-extrabold mb-2">Taxi</h2>
         <p>
           Worthing is a big ol' town but you should definitely pre-book taxis in
           advance for Saturday night. There's no uber here.</p>

@@ -673,11 +673,11 @@ table {
 }
 
 .bg-orange {
-  background-color: hsl(22, 95%, 68%);
+  background-color: hsl(22, 100%, 68%);
 }
 
 .bg-orange-light {
-  background-color: #faad63;
+  background-color: hsl(22, 95%, 75%);
 }
 
 .bg-orange-lighter {
@@ -965,11 +965,11 @@ table {
 }
 
 .hover\:bg-orange:hover {
-  background-color: hsl(22, 95%, 68%);
+  background-color: hsl(22, 100%, 68%);
 }
 
 .hover\:bg-orange-light:hover {
-  background-color: #faad63;
+  background-color: hsl(22, 95%, 75%);
 }
 
 .hover\:bg-orange-lighter:hover {
@@ -1257,11 +1257,11 @@ table {
 }
 
 .focus\:bg-orange:focus {
-  background-color: hsl(22, 95%, 68%);
+  background-color: hsl(22, 100%, 68%);
 }
 
 .focus\:bg-orange-light:focus {
-  background-color: #faad63;
+  background-color: hsl(22, 95%, 75%);
 }
 
 .focus\:bg-orange-lighter:focus {
@@ -1621,11 +1621,11 @@ table {
 }
 
 .border-orange {
-  border-color: hsl(22, 95%, 68%);
+  border-color: hsl(22, 100%, 68%);
 }
 
 .border-orange-light {
-  border-color: #faad63;
+  border-color: hsl(22, 95%, 75%);
 }
 
 .border-orange-lighter {
@@ -1913,11 +1913,11 @@ table {
 }
 
 .hover\:border-orange:hover {
-  border-color: hsl(22, 95%, 68%);
+  border-color: hsl(22, 100%, 68%);
 }
 
 .hover\:border-orange-light:hover {
-  border-color: #faad63;
+  border-color: hsl(22, 95%, 75%);
 }
 
 .hover\:border-orange-lighter:hover {
@@ -2205,11 +2205,11 @@ table {
 }
 
 .focus\:border-orange:focus {
-  border-color: hsl(22, 95%, 68%);
+  border-color: hsl(22, 100%, 68%);
 }
 
 .focus\:border-orange-light:focus {
-  border-color: #faad63;
+  border-color: hsl(22, 95%, 75%);
 }
 
 .focus\:border-orange-lighter:focus {
@@ -4985,11 +4985,11 @@ table {
 }
 
 .text-orange {
-  color: hsl(22, 95%, 68%);
+  color: hsl(22, 100%, 68%);
 }
 
 .text-orange-light {
-  color: #faad63;
+  color: hsl(22, 95%, 75%);
 }
 
 .text-orange-lighter {
@@ -5277,11 +5277,11 @@ table {
 }
 
 .hover\:text-orange:hover {
-  color: hsl(22, 95%, 68%);
+  color: hsl(22, 100%, 68%);
 }
 
 .hover\:text-orange-light:hover {
-  color: #faad63;
+  color: hsl(22, 95%, 75%);
 }
 
 .hover\:text-orange-lighter:hover {
@@ -5569,11 +5569,11 @@ table {
 }
 
 .focus\:text-orange:focus {
-  color: hsl(22, 95%, 68%);
+  color: hsl(22, 100%, 68%);
 }
 
 .focus\:text-orange-light:focus {
-  color: #faad63;
+  color: hsl(22, 95%, 75%);
 }
 
 .focus\:text-orange-lighter:focus {
@@ -6323,11 +6323,11 @@ a {
   }
 
   .sm\:bg-orange {
-    background-color: hsl(22, 95%, 68%);
+    background-color: hsl(22, 100%, 68%);
   }
 
   .sm\:bg-orange-light {
-    background-color: #faad63;
+    background-color: hsl(22, 95%, 75%);
   }
 
   .sm\:bg-orange-lighter {
@@ -6615,11 +6615,11 @@ a {
   }
 
   .sm\:hover\:bg-orange:hover {
-    background-color: hsl(22, 95%, 68%);
+    background-color: hsl(22, 100%, 68%);
   }
 
   .sm\:hover\:bg-orange-light:hover {
-    background-color: #faad63;
+    background-color: hsl(22, 95%, 75%);
   }
 
   .sm\:hover\:bg-orange-lighter:hover {
@@ -6907,11 +6907,11 @@ a {
   }
 
   .sm\:focus\:bg-orange:focus {
-    background-color: hsl(22, 95%, 68%);
+    background-color: hsl(22, 100%, 68%);
   }
 
   .sm\:focus\:bg-orange-light:focus {
-    background-color: #faad63;
+    background-color: hsl(22, 95%, 75%);
   }
 
   .sm\:focus\:bg-orange-lighter:focus {
@@ -7263,11 +7263,11 @@ a {
   }
 
   .sm\:border-orange {
-    border-color: hsl(22, 95%, 68%);
+    border-color: hsl(22, 100%, 68%);
   }
 
   .sm\:border-orange-light {
-    border-color: #faad63;
+    border-color: hsl(22, 95%, 75%);
   }
 
   .sm\:border-orange-lighter {
@@ -7555,11 +7555,11 @@ a {
   }
 
   .sm\:hover\:border-orange:hover {
-    border-color: hsl(22, 95%, 68%);
+    border-color: hsl(22, 100%, 68%);
   }
 
   .sm\:hover\:border-orange-light:hover {
-    border-color: #faad63;
+    border-color: hsl(22, 95%, 75%);
   }
 
   .sm\:hover\:border-orange-lighter:hover {
@@ -7847,11 +7847,11 @@ a {
   }
 
   .sm\:focus\:border-orange:focus {
-    border-color: hsl(22, 95%, 68%);
+    border-color: hsl(22, 100%, 68%);
   }
 
   .sm\:focus\:border-orange-light:focus {
-    border-color: #faad63;
+    border-color: hsl(22, 95%, 75%);
   }
 
   .sm\:focus\:border-orange-lighter:focus {
@@ -10611,11 +10611,11 @@ a {
   }
 
   .sm\:text-orange {
-    color: hsl(22, 95%, 68%);
+    color: hsl(22, 100%, 68%);
   }
 
   .sm\:text-orange-light {
-    color: #faad63;
+    color: hsl(22, 95%, 75%);
   }
 
   .sm\:text-orange-lighter {
@@ -10903,11 +10903,11 @@ a {
   }
 
   .sm\:hover\:text-orange:hover {
-    color: hsl(22, 95%, 68%);
+    color: hsl(22, 100%, 68%);
   }
 
   .sm\:hover\:text-orange-light:hover {
-    color: #faad63;
+    color: hsl(22, 95%, 75%);
   }
 
   .sm\:hover\:text-orange-lighter:hover {
@@ -11195,11 +11195,11 @@ a {
   }
 
   .sm\:focus\:text-orange:focus {
-    color: hsl(22, 95%, 68%);
+    color: hsl(22, 100%, 68%);
   }
 
   .sm\:focus\:text-orange-light:focus {
-    color: #faad63;
+    color: hsl(22, 95%, 75%);
   }
 
   .sm\:focus\:text-orange-lighter:focus {
@@ -11930,11 +11930,11 @@ a {
   }
 
   .md\:bg-orange {
-    background-color: hsl(22, 95%, 68%);
+    background-color: hsl(22, 100%, 68%);
   }
 
   .md\:bg-orange-light {
-    background-color: #faad63;
+    background-color: hsl(22, 95%, 75%);
   }
 
   .md\:bg-orange-lighter {
@@ -12222,11 +12222,11 @@ a {
   }
 
   .md\:hover\:bg-orange:hover {
-    background-color: hsl(22, 95%, 68%);
+    background-color: hsl(22, 100%, 68%);
   }
 
   .md\:hover\:bg-orange-light:hover {
-    background-color: #faad63;
+    background-color: hsl(22, 95%, 75%);
   }
 
   .md\:hover\:bg-orange-lighter:hover {
@@ -12514,11 +12514,11 @@ a {
   }
 
   .md\:focus\:bg-orange:focus {
-    background-color: hsl(22, 95%, 68%);
+    background-color: hsl(22, 100%, 68%);
   }
 
   .md\:focus\:bg-orange-light:focus {
-    background-color: #faad63;
+    background-color: hsl(22, 95%, 75%);
   }
 
   .md\:focus\:bg-orange-lighter:focus {
@@ -12870,11 +12870,11 @@ a {
   }
 
   .md\:border-orange {
-    border-color: hsl(22, 95%, 68%);
+    border-color: hsl(22, 100%, 68%);
   }
 
   .md\:border-orange-light {
-    border-color: #faad63;
+    border-color: hsl(22, 95%, 75%);
   }
 
   .md\:border-orange-lighter {
@@ -13162,11 +13162,11 @@ a {
   }
 
   .md\:hover\:border-orange:hover {
-    border-color: hsl(22, 95%, 68%);
+    border-color: hsl(22, 100%, 68%);
   }
 
   .md\:hover\:border-orange-light:hover {
-    border-color: #faad63;
+    border-color: hsl(22, 95%, 75%);
   }
 
   .md\:hover\:border-orange-lighter:hover {
@@ -13454,11 +13454,11 @@ a {
   }
 
   .md\:focus\:border-orange:focus {
-    border-color: hsl(22, 95%, 68%);
+    border-color: hsl(22, 100%, 68%);
   }
 
   .md\:focus\:border-orange-light:focus {
-    border-color: #faad63;
+    border-color: hsl(22, 95%, 75%);
   }
 
   .md\:focus\:border-orange-lighter:focus {
@@ -16218,11 +16218,11 @@ a {
   }
 
   .md\:text-orange {
-    color: hsl(22, 95%, 68%);
+    color: hsl(22, 100%, 68%);
   }
 
   .md\:text-orange-light {
-    color: #faad63;
+    color: hsl(22, 95%, 75%);
   }
 
   .md\:text-orange-lighter {
@@ -16510,11 +16510,11 @@ a {
   }
 
   .md\:hover\:text-orange:hover {
-    color: hsl(22, 95%, 68%);
+    color: hsl(22, 100%, 68%);
   }
 
   .md\:hover\:text-orange-light:hover {
-    color: #faad63;
+    color: hsl(22, 95%, 75%);
   }
 
   .md\:hover\:text-orange-lighter:hover {
@@ -16802,11 +16802,11 @@ a {
   }
 
   .md\:focus\:text-orange:focus {
-    color: hsl(22, 95%, 68%);
+    color: hsl(22, 100%, 68%);
   }
 
   .md\:focus\:text-orange-light:focus {
-    color: #faad63;
+    color: hsl(22, 95%, 75%);
   }
 
   .md\:focus\:text-orange-lighter:focus {
@@ -17537,11 +17537,11 @@ a {
   }
 
   .lg\:bg-orange {
-    background-color: hsl(22, 95%, 68%);
+    background-color: hsl(22, 100%, 68%);
   }
 
   .lg\:bg-orange-light {
-    background-color: #faad63;
+    background-color: hsl(22, 95%, 75%);
   }
 
   .lg\:bg-orange-lighter {
@@ -17829,11 +17829,11 @@ a {
   }
 
   .lg\:hover\:bg-orange:hover {
-    background-color: hsl(22, 95%, 68%);
+    background-color: hsl(22, 100%, 68%);
   }
 
   .lg\:hover\:bg-orange-light:hover {
-    background-color: #faad63;
+    background-color: hsl(22, 95%, 75%);
   }
 
   .lg\:hover\:bg-orange-lighter:hover {
@@ -18121,11 +18121,11 @@ a {
   }
 
   .lg\:focus\:bg-orange:focus {
-    background-color: hsl(22, 95%, 68%);
+    background-color: hsl(22, 100%, 68%);
   }
 
   .lg\:focus\:bg-orange-light:focus {
-    background-color: #faad63;
+    background-color: hsl(22, 95%, 75%);
   }
 
   .lg\:focus\:bg-orange-lighter:focus {
@@ -18477,11 +18477,11 @@ a {
   }
 
   .lg\:border-orange {
-    border-color: hsl(22, 95%, 68%);
+    border-color: hsl(22, 100%, 68%);
   }
 
   .lg\:border-orange-light {
-    border-color: #faad63;
+    border-color: hsl(22, 95%, 75%);
   }
 
   .lg\:border-orange-lighter {
@@ -18769,11 +18769,11 @@ a {
   }
 
   .lg\:hover\:border-orange:hover {
-    border-color: hsl(22, 95%, 68%);
+    border-color: hsl(22, 100%, 68%);
   }
 
   .lg\:hover\:border-orange-light:hover {
-    border-color: #faad63;
+    border-color: hsl(22, 95%, 75%);
   }
 
   .lg\:hover\:border-orange-lighter:hover {
@@ -19061,11 +19061,11 @@ a {
   }
 
   .lg\:focus\:border-orange:focus {
-    border-color: hsl(22, 95%, 68%);
+    border-color: hsl(22, 100%, 68%);
   }
 
   .lg\:focus\:border-orange-light:focus {
-    border-color: #faad63;
+    border-color: hsl(22, 95%, 75%);
   }
 
   .lg\:focus\:border-orange-lighter:focus {
@@ -21825,11 +21825,11 @@ a {
   }
 
   .lg\:text-orange {
-    color: hsl(22, 95%, 68%);
+    color: hsl(22, 100%, 68%);
   }
 
   .lg\:text-orange-light {
-    color: #faad63;
+    color: hsl(22, 95%, 75%);
   }
 
   .lg\:text-orange-lighter {
@@ -22117,11 +22117,11 @@ a {
   }
 
   .lg\:hover\:text-orange:hover {
-    color: hsl(22, 95%, 68%);
+    color: hsl(22, 100%, 68%);
   }
 
   .lg\:hover\:text-orange-light:hover {
-    color: #faad63;
+    color: hsl(22, 95%, 75%);
   }
 
   .lg\:hover\:text-orange-lighter:hover {
@@ -22409,11 +22409,11 @@ a {
   }
 
   .lg\:focus\:text-orange:focus {
-    color: hsl(22, 95%, 68%);
+    color: hsl(22, 100%, 68%);
   }
 
   .lg\:focus\:text-orange-light:focus {
-    color: #faad63;
+    color: hsl(22, 95%, 75%);
   }
 
   .lg\:focus\:text-orange-lighter:focus {
@@ -23144,11 +23144,11 @@ a {
   }
 
   .xl\:bg-orange {
-    background-color: hsl(22, 95%, 68%);
+    background-color: hsl(22, 100%, 68%);
   }
 
   .xl\:bg-orange-light {
-    background-color: #faad63;
+    background-color: hsl(22, 95%, 75%);
   }
 
   .xl\:bg-orange-lighter {
@@ -23436,11 +23436,11 @@ a {
   }
 
   .xl\:hover\:bg-orange:hover {
-    background-color: hsl(22, 95%, 68%);
+    background-color: hsl(22, 100%, 68%);
   }
 
   .xl\:hover\:bg-orange-light:hover {
-    background-color: #faad63;
+    background-color: hsl(22, 95%, 75%);
   }
 
   .xl\:hover\:bg-orange-lighter:hover {
@@ -23728,11 +23728,11 @@ a {
   }
 
   .xl\:focus\:bg-orange:focus {
-    background-color: hsl(22, 95%, 68%);
+    background-color: hsl(22, 100%, 68%);
   }
 
   .xl\:focus\:bg-orange-light:focus {
-    background-color: #faad63;
+    background-color: hsl(22, 95%, 75%);
   }
 
   .xl\:focus\:bg-orange-lighter:focus {
@@ -24084,11 +24084,11 @@ a {
   }
 
   .xl\:border-orange {
-    border-color: hsl(22, 95%, 68%);
+    border-color: hsl(22, 100%, 68%);
   }
 
   .xl\:border-orange-light {
-    border-color: #faad63;
+    border-color: hsl(22, 95%, 75%);
   }
 
   .xl\:border-orange-lighter {
@@ -24376,11 +24376,11 @@ a {
   }
 
   .xl\:hover\:border-orange:hover {
-    border-color: hsl(22, 95%, 68%);
+    border-color: hsl(22, 100%, 68%);
   }
 
   .xl\:hover\:border-orange-light:hover {
-    border-color: #faad63;
+    border-color: hsl(22, 95%, 75%);
   }
 
   .xl\:hover\:border-orange-lighter:hover {
@@ -24668,11 +24668,11 @@ a {
   }
 
   .xl\:focus\:border-orange:focus {
-    border-color: hsl(22, 95%, 68%);
+    border-color: hsl(22, 100%, 68%);
   }
 
   .xl\:focus\:border-orange-light:focus {
-    border-color: #faad63;
+    border-color: hsl(22, 95%, 75%);
   }
 
   .xl\:focus\:border-orange-lighter:focus {
@@ -27432,11 +27432,11 @@ a {
   }
 
   .xl\:text-orange {
-    color: hsl(22, 95%, 68%);
+    color: hsl(22, 100%, 68%);
   }
 
   .xl\:text-orange-light {
-    color: #faad63;
+    color: hsl(22, 95%, 75%);
   }
 
   .xl\:text-orange-lighter {
@@ -27724,11 +27724,11 @@ a {
   }
 
   .xl\:hover\:text-orange:hover {
-    color: hsl(22, 95%, 68%);
+    color: hsl(22, 100%, 68%);
   }
 
   .xl\:hover\:text-orange-light:hover {
-    color: #faad63;
+    color: hsl(22, 95%, 75%);
   }
 
   .xl\:hover\:text-orange-lighter:hover {
@@ -28016,11 +28016,11 @@ a {
   }
 
   .xl\:focus\:text-orange:focus {
-    color: hsl(22, 95%, 68%);
+    color: hsl(22, 100%, 68%);
   }
 
   .xl\:focus\:text-orange-light:focus {
-    color: #faad63;
+    color: hsl(22, 95%, 75%);
   }
 
   .xl\:focus\:text-orange-lighter:focus {
