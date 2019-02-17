@@ -19,8 +19,8 @@ defmodule WeddingsiteWeb.DashboardController do
     rsvpd_people = only_rsvp(people)
     attendees = only_attendees(rsvpd_people)
     day_guests = only_day_guests(attendees)
-    rsvpd_no = only_rsvpd_no(attendees)
-    {cheesecakes, tarts} = {cheesecakes_only(rsvpd_people), tarts_only(rsvpd_people)}
+    rsvpd_no = only_rsvpd_no(rsvpd_people)
+    {cheesecakes, tarts} = {cheesecakes_only(attendees), tarts_only(attendees)}
     dietary_requirements = only_with_dietary_requirements(rsvpd_people)
 
     %{num_invites: Enum.count(invites), num_people: Enum.count(people), num_rsvps: Enum.count(rsvpd_people),
