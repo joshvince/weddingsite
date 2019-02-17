@@ -27,7 +27,7 @@ config :phoenix, :json_library, Jason
 
 config :weddingsite, admin_basic_auth: [
   username: "admin",
-  password: "Beaver2008"
+  password: {:system, "WEDDINGSITE_PASSWORD"}
 ]
 
 # Import environment specific config. This must remain at the bottom
