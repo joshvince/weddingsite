@@ -4,6 +4,7 @@
 <table>
   <thead>
     <tr>
+      <th>Url</th>
       <th>Code</th>
       <th>Family name</th>
       <th>Email</th>
@@ -15,6 +16,7 @@
   <tbody>
 <%= for invite <- @invites do %>
     <tr>
+      <td><%= "http://boshwedding.com/rsvp?code=#{invite.code}"%></td>
       <td><%= invite.code %></td>
       <td><%= invite.family_name %></td>
       <td><%= invite.email %></td>
