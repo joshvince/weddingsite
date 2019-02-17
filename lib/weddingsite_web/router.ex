@@ -7,6 +7,7 @@ defmodule WeddingsiteWeb.Router do
     plug :fetch_flash
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug BasicAuth, use_config: {:weddingsite, :admin_basic_auth}
   end
 
   pipeline :api do

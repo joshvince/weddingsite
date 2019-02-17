@@ -44,7 +44,8 @@ defmodule Weddingsite.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:ecto_enum, "~> 1.0"},
-      {:cors_plug, "~> 1.5"}
+      {:cors_plug, "~> 1.5"},
+      {:basic_auth, "~> 2.2.2"}
     ]
   end
 
