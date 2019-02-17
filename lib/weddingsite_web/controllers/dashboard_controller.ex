@@ -21,10 +21,12 @@ defmodule WeddingsiteWeb.DashboardController do
     day_guests = only_day_guests(attendees)
     rsvpd_no = only_rsvpd_no(attendees)
     {cheesecakes, tarts} = {cheesecakes_only(rsvpd_people), tarts_only(rsvpd_people)}
+    dietary_requirements = only_with_dietary_requirements(rsvpd_people)
 
     %{num_invites: Enum.count(invites), num_people: Enum.count(people), num_rsvps: Enum.count(rsvpd_people),
       num_day_guests: Enum.count(day_guests), num_rsvpd_no: Enum.count(rsvpd_no), num_total_guests: Enum.count(attendees),
-      num_cheesecakes: Enum.count(cheesecakes), num_tarts: Enum.count(tarts)}
+      num_cheesecakes: Enum.count(cheesecakes), num_tarts: Enum.count(tarts),
+      num_dietary_requirements: Enum.count(dietary_requirements)}
   end
 
   defp only_attendees(people) do
@@ -51,6 +53,10 @@ defmodule WeddingsiteWeb.DashboardController do
 
   defp tarts_only(people) do
     Enum.filter(people, fn %Person{dessert_choice: dessert} -> dessert == :chocolate_tart end)
+  end
+
+  defp only_with_dietary_requirements(people) do
+    Enum.filter(people, fn %Person{dietary_requirements: reqs} -> reqs != nil end)
   end
 
 

@@ -5,48 +5,71 @@
     <div class="flex flex-col justify-center mx-8 w-32">
       <h4 class="text-grey-darker">Guest Numbers</h4>
     </div>
-    <div class="flex flex-col items-center mx-16 w-64">
-      <h1><%= @data.num_total_guests %></h1>
-      <p class="text-2xl text-grey-dark">Total Attendees</p>
-    </div>
-    <div class="flex flex-col items-center mx-16 w-64">
-      <h1><%= @data.num_day_guests %></h1>
-      <p class="text-2xl text-grey-dark">Day Guests</p>
-    </div>
-    <div class="flex flex-col items-center mx-16 w-64">
-      <h1><%= @data.num_total_guests - @data.num_day_guests %></h1>
-      <p class="text-2xl text-grey-dark">Evening Guests</p>
-    </div>
+    <a href="<%= Routes.person_path(@conn, :attending_people) %>">
+      <div class="flex flex-col items-center mx-16 w-64">
+        <h1><%= @data.num_total_guests %></h1>
+        <p class="text-2xl text-grey-dark">Total Attendees</p>
+      </div>
+    </a>
+    <a href="<%= Routes.person_path(@conn, :attending_day_guests) %>">
+      <div class="flex flex-col items-center mx-16 w-64">
+        <h1><%= @data.num_day_guests %></h1>
+        <p class="text-2xl text-grey-dark">Day Guests</p>
+      </div>
+    </a>
+
+    <a href="<%= Routes.person_path(@conn, :attending_evening_guests) %>">
+      <div class="flex flex-col items-center mx-16 w-64">
+        <h1><%= @data.num_total_guests - @data.num_day_guests %></h1>
+        <p class="text-2xl text-grey-dark">Evening Guests</p>
+      </div>
+    </a>
   </div>
   <div class="flex my-16">
     <div class="flex flex-col justify-center mx-8 w-32">
       <h4 class="text-grey-darker">RSVPs</h4>
     </div>
-    <div class="flex flex-col items-center mx-16 w-64">
-      <h1><%= @data.num_rsvps %></h1>
-      <p class="text-2xl text-grey-dark">RSVPd</p>
-    </div>
-    <div class="flex flex-col items-center mx-16 w-64">
-      <h1><%= @data.num_people - @data.num_rsvps %></h1>
-      <p class="text-2xl text-grey-dark">Not yet</p>
-    </div>
-    <div class="flex flex-col items-center mx-16 w-64">
-      <h1><%= @data.num_rsvpd_no %></h1>
-      <p class="text-2xl text-grey-dark">RSVPd No</p>
-    </div>
+    <a href="<%= Routes.person_path(@conn, :responded_people) %>">
+      <div class="flex flex-col items-center mx-16 w-64">
+        <h1><%= @data.num_rsvps %></h1>
+        <p class="text-2xl text-grey-dark">RSVPd</p>
+      </div>
+    </a>
+    <a href="<%= Routes.person_path(@conn, :not_yet_responded_people) %>">
+      <div class="flex flex-col items-center mx-16 w-64">
+        <h1><%= @data.num_people - @data.num_rsvps %></h1>
+        <p class="text-2xl text-grey-dark">Not yet</p>
+      </div>
+    </a>
+    <a href="<%= Routes.person_path(@conn, :cant_attend_people) %>">
+      <div class="flex flex-col items-center mx-16 w-64">
+        <h1><%= @data.num_rsvpd_no %></h1>
+        <p class="text-2xl text-grey-dark">RSVPd No</p>
+      </div>
+    </a>
   </div>
   <div class="flex my-16">
     <div class="flex flex-col justify-center mx-8 w-32">
       <h4 class="text-grey-darker">Dessert Choices</h4>
     </div>
-    <div class="flex flex-col items-center mx-16 w-64">
-      <h1><%= @data.num_cheesecakes %></h1>
-      <p class="text-2xl text-grey-dark">Cheesecakes</p>
-    </div>
-    <div class="flex flex-col items-center mx-16 w-64">
-      <h1><%= @data.num_tarts %></h1>
-      <p class="text-2xl text-grey-dark">Tarts</p>
-    </div>
+    <a href="<%= Routes.person_path(@conn, :cheesecakes) %>">
+      <div class="flex flex-col items-center mx-16 w-64">
+        <h1><%= @data.num_cheesecakes %></h1>
+        <p class="text-2xl text-grey-dark">Cheesecakes</p>
+      </div>
+    </a>
+    <a href="<%= Routes.person_path(@conn, :tarts) %>">
+      <div class="flex flex-col items-center mx-16 w-64">
+        <h1><%= @data.num_tarts %></h1>
+        <p class="text-2xl text-grey-dark">Tarts</p>
+      </div>
+    </a>
+    <a href="<%= Routes.person_path(@conn, :with_dietary_requirements) %>">
+      <div class="flex flex-col items-center mx-16 w-64">
+        <h1><%= @data.num_dietary_requirements %></h1>
+        <p class="text-xl text-grey-dark">With Dietary Requirements</p>
+      </div>
+    </a>
   </div>
 
 </div>
