@@ -16,24 +16,22 @@ const GettingThere = () => {
       <div className="mb-6">
         <h2 className="text-blue-dark font-extrabold mb-2">Car</h2>
         <p className="mb-6">
-          Driving is the easiest way to get to the Barns, and there's plenty of
-          car parking. <br /></p>
+          Driving is the easiest way to get to the barns, and there's plenty of parking. <br /></p>
           <ul className="my-4">
             <li className="mt-4">
-              Follow a map until you reach the exit off the A24 outside Findon.
-            </li>
-            <li className="mt-4">
-              Exit off the A24 and{" "}
-              <span className="text-blue font-bold">
-                take the first right turn
-              </span>{" "}
-              through the stone gates.
+              Exit the A24 and turn into Nepcote (Nepcote Lane)
             </li>
             <li className="mt-4">
               <span className="text-blue font-bold">
-                Immediately head right
+                Take the first right
               </span>{" "}
-              again towards the stables.{" "}
+              through the stone gates into Cissbury.
+            </li>
+            <li className="mt-4">
+              <span className="text-blue font-bold">
+                Immediately bear right
+              </span>{" "}
+              again towards the barns.{" "}
             </li>
             <li className="mt-4">
               <span className="text-blue font-bold">Turn right</span> into the
@@ -48,8 +46,8 @@ const GettingThere = () => {
             </li>
           </ul>
         <p>
-          You can leave your car overnight in the car park but please pick it up
-          by <span className="text-blue font-bold">11am the next day. </span>
+          Park on the grass past the tree line. You can leave your car overnight but please pick it up
+          by <span className="text-blue font-bold">11am the next day.</span>
         </p>
       </div>
       <div className="mb-6">
@@ -68,7 +66,7 @@ const GettingThere = () => {
         <h2 className="text-blue-dark font-extrabold mb-2">Taxi</h2>
         <p>
           Worthing is a big ol' town but you should definitely pre-book taxis in
-          advance for Saturday night. There's no uber here.</p>
+          advance for 23:45 on Saturday night. There's no uber here.</p>
           <ul className="my-6">
             <li className="mt-4">
               <span className="text-blue font-bold">Arrow</span>{" "}

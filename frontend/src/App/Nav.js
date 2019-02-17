@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <div className="fixed w-screen h-16 bg-blue-light shadow p-4 text-white flex items-center justify-around">
       <Link to="/" className="no-underline">
-        <p className="w-24 font-bold md:text-xl text-white">22619</p>
+        <p className="w-24 font-bold md:text-xl text-white">BOSH</p>
       </Link>
       <Link to="/info" className="no-underline">
         <p className="w-24 font-bold md:text-xl text-white">INFO</p>
