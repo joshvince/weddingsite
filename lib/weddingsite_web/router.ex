@@ -16,7 +16,17 @@ defmodule WeddingsiteWeb.Router do
   scope "/", WeddingsiteWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", DashboardController, :index
+    # dashboard routes
+    get "/attending_people", PersonController, :attending_people
+    get "/attending_day_guests", PersonController, :attending_day_guests
+    get "/attending_evening_guests", PersonController, :attending_evening_guests
+    get "/responded_people", PersonController, :responded_people
+    get "/not_yet_responded_people", PersonController, :not_yet_responded_people
+    get "/cant_attend_people", PersonController, :cant_attend_people
+    get "/cheesecakes", PersonController, :cheesecakes
+    get "/tarts", PersonController, :tarts
+    get "/with_dietary_requirements", PersonController, :with_dietary_requirements
   end
 
   scope "/admin", WeddingsiteWeb do
@@ -27,6 +37,7 @@ defmodule WeddingsiteWeb.Router do
     get "/invites/:id/guests", InviteController, :guests
     post "/invites/:id/update_guests", InviteController, :update_guests
     resources "/people", PersonController
+
   end
 
   # Our API serves the frontend client app

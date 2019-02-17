@@ -9,6 +9,87 @@ defmodule WeddingsiteWeb.PersonController do
     render(conn, "index.html", people: people)
   end
 
+  def attending_people(conn, _params) do
+    people =
+      Guests.list_people()
+      |> Enum.filter(&is_attending?(&1))
+    render(conn, "index.html", people: people)
+  end
+
+  def attending_day_guests(conn, _params) do
+    people =
+      Guests.list_people()
+      |> Enum.filter(&is_attending?(&1))
+      |> Enum.filter(&is_day_guest?(&1))
+    render(conn, "index.html", people: people)
+  end
+
+  def attending_evening_guests(conn, _params) do
+    people =
+      Guests.list_people()
+      |> Enum.filter(&is_attending?(&1))
+      |> Enum.reject(&is_day_guest?(&1))
+    render(conn, "index.html", people: people)
+  end
+
+  def responded_people(conn, _params) do
+    people =
+      Guests.list_people()
+      |> Enum.filter(&has_rsvpd?(&1))
+    render(conn, "index.html", people: people)
+  end
+
+  def not_yet_responded_people(conn, _params) do
+    people =
+      Guests.list_people()
+      |> Enum.reject(&has_rsvpd?(&1))
+    render(conn, "index.html", people: people)
+  end
+
+  def cant_attend_people(conn, _params) do
+    people =
+      Guests.list_people()
+      |> Enum.filter(&has_rsvpd?(&1))
+      |> Enum.reject(&is_attending?(&1))
+    render(conn, "index.html", people: people)
+  end
+
+  def cheesecakes(conn, _params) do
+    people =
+      Guests.list_people()
+      |> Enum.filter(&is_attending?(&1))
+      |> Enum.filter(fn %Person{dessert_choice: dessert} -> dessert == :raspberry_cheesecake end)
+    render(conn, "index.html", people: people)
+  end
+
+  def tarts(conn, _params) do
+    people =
+      Guests.list_people()
+      |> Enum.filter(&is_attending?(&1))
+      |> Enum.filter(fn %Person{dessert_choice: dessert} -> dessert == :chocolate_tart end)
+    render(conn, "index.html", people: people)
+  end
+
+  def with_dietary_requirements(conn, _params) do
+    people =
+    Guests.list_people()
+    |> Enum.filter(&is_attending?(&1))
+    |> Enum.filter(fn %Person{dietary_requirements: reqs} -> reqs != nil end)
+    render(conn, "index.html", people: people)
+  end
+
+  defp has_rsvpd?(%Person{rsvp_at: rsvp}) do
+    rsvp != nil
+  end
+
+  defp is_attending?(%Person{attending: attending}) do
+    attending == true
+  end
+
+  defp is_day_guest?(%Person{day_guest: day}) do
+    day == true
+  end
+
   def new(conn, _params) do
     changeset = Guests.change_person(%Person{})
     render(conn, "new.html", changeset: changeset)
