@@ -7,9 +7,9 @@ const Timeline = () => {
       <div><h2 className="text-3xl mb-2 text-blue-darker font-extrabold">On the day</h2></div>
       <div className="bg-blue h-1 w-24 my-4" />
       <TimelineItem
-        time="12:00"
+        time="12:30"
         header="Venue opens"
-        subheader="The bar will be open before the ceremony"
+        subheader="Please try and get there before Bethan does"
       />
       <TimelineItem
         time="13:00"
@@ -18,28 +18,28 @@ const Timeline = () => {
       />
       <TimelineItem
         time="13:30"
-        header="Drinks"
-        subheader="Pace yourself - but we did buy a lot of wine"
+        header="Drinks & Photos"
+        subheader="Beer, wine and sunshine"
       />
       <TimelineItem
         time="15:00"
-        header="Meal & Toasts"
-        subheader="Giant Chicken Shawarma, potatoes and salads served family style"
+        header="Meal & Speeches"
+        subheader="Giant Chicken Shawarma and salads served family style"
       />
       <TimelineItem
-        time="18:00"
+        time="18:30"
         header="Evening Party"
-        subheader="More guests arrive and the music will begin"
+        subheader="Evening guests arrive and the music will begin"
       />
       <TimelineItem
         time="20:00"
         header="Band"
-        subheader="Full bar, tasty buffet and live music"
+        subheader="Drinks, tasty buffet and live music"
       />
       <TimelineItem
         time="23:30"
         header="Last Orders"
-        subheader="Tell your taxi to arrive at 23:45"
+        subheader="Tell your taxi to be there at 23:45"
       />
     </div>
   );
