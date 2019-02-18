@@ -1,5 +1,5 @@
 <h1>Listing Invites</h1>
-<span><%= button "New Invite", to: Routes.invite_path(@conn, :new) %></span>
+<span><%= link "New Invite", to: Routes.invite_path(@conn, :new) %></span>
 
 <table>
   <thead>
@@ -33,4 +33,4 @@
   </tbody>
 </table>
 
-<span><%= button "New Invite", to: Routes.invite_path(@conn, :new) %></span>
+<span><%= link "New Invite", to: Routes.invite_path(@conn, :new) %></span>
