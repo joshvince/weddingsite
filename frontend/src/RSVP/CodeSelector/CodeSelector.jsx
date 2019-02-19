@@ -18,8 +18,8 @@ class CodeSelector extends Component {
       triggerRedirect: false
     };
 
-    this.API_URL = `/api/rsvp_check`;
-    // this.API_URL = `https://protected-scrubland-86840.herokuapp.com/api/rsvp_check`;
+    // this.API_URL = `/api/rsvp_check`;
+    this.API_URL = `https://protected-scrubland-86840.herokuapp.com/api/rsvp_check`;
     this.toggleError = this.toggleError.bind(this);
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
