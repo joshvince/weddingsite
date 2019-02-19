@@ -30,7 +30,8 @@ class RSVPContainer extends Component {
           invite: data,
           loading: false,
           rsvps: data.guests.sort((a, b) => a.id - b.id),
-          everybodyRSVP: this.checkRSVP(data.guests)
+          everybodyRSVP: this.checkRSVP(data.guests),
+          anyoneComing: this.checkAnyoneComing(data.guests)
         });
       });
   };
