@@ -22,6 +22,7 @@ const RSVP = ({
                 key={`rsvp${i}`}
                 guestData={r}
                 rsvpAction={rsvpAction}
+                dayGuest={invite.day_guests}
               />
             );
           })}
